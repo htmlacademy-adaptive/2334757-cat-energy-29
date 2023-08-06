@@ -1,0 +1,19 @@
+.site-list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.site-list__item {
+  text-align: center;
+}
+
+.site-list__link {
+  @include title;
+
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

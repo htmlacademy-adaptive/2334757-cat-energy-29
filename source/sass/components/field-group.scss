@@ -1,0 +1,28 @@
+.field-group {
+  @include fieldset-reset;
+
+  margin-bottom: 24px;
+}
+
+.field-group__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field-group__item {
+  display: flex;
+  gap: 13px;
+  align-items: center
+}
+
+.field-group__title {
+  @include title;
+
+  font-size: 24px;
+  line-height: 26px;
+
+  margin-bottom: 35px;
+}

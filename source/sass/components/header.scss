@@ -1,0 +1,16 @@
+.header__wrapper {
+  margin: 0 auto;
+  width: 280px;
+  display: flex;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+
+  width: 190px;
+}
+
+.header__toggle-burger {
+  margin-left: auto;
+}

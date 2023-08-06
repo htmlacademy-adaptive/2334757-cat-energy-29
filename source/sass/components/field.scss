@@ -1,0 +1,23 @@
+.field__title {
+  @include text-form;
+
+  max-width: 94px;
+  white-space: nowrap;
+}
+
+.field__input {
+  @include text-form;
+
+  display: block;
+  padding: 14px;
+  width: 100%;
+
+  border: 1px solid #E7E7E7;
+  appearance: none;
+
+  &--comment {
+    width: 280px;
+    min-height: 150px;
+    box-sizing: border-box;
+  }
+}

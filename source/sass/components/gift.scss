@@ -1,0 +1,28 @@
+.gift {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  width: 280px;
+  min-height: 290px;
+
+  background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(104,183,56,0.85) 0%), url("../img/backgrounds/bg-cat-backpack.jpg");
+  background-repeat: no-repeat;
+}
+
+.gift__description {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $light-text;
+
+  padding: 181px 61px 43px 58px;
+
+  position: relative;
+
+  &::before {
+    content: url("../img/icons/gift-icon.svg");
+
+    position: absolute;
+    top: 20%;
+    left: 36%;
+  }
+}

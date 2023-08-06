@@ -1,0 +1,39 @@
+.programm-selection {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.programm-selection__title {
+  @include title;
+
+  font-size: 36px;
+  line-height: 36px;
+
+  margin-bottom: 37px;
+}
+
+.programm-selection__subtitle {
+  @include title;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  width: 226px;
+
+  margin-bottom: 39px;
+}
+
+.programm-selection__button {
+  padding: 14px 0;
+  margin-bottom: 21px;
+}
+
+.programm-selection__note {
+  color: #000000;
+
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  text-align: center;
+}

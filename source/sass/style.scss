@@ -1,1 +1,38 @@
-// Начните писать стили здесь
+// Базовые
+@import './global/base.scss';
+@import './global/variables.scss';
+@import './global/mixins.scss';
+@import './global/fonts.scss';
+
+// Часто используемые
+@import './components/button.scss';
+@import './components/header.scss';
+@import './components/site-list.scss';
+@import './components/gift.scss';
+@import './components/contacts.scss';
+@import './components/footer.scss';
+@import './components/social.scss';
+@import './components/copyright.scss';
+
+// Карточки
+@import './components/programm.scss';
+@import './components/card.scss';
+@import './components/card-upsale.scss';
+
+// Блоки index
+@import './components/hero.scss';
+@import './components/programms.scss';
+@import './components/about-product.scss';
+@import './components/example.scss';
+
+// Блоки catalog
+@import './components/catalog.scss';
+@import './components/upsale.scss';
+
+// Блоки form
+@import './components/programm-selection.scss';
+@import './components/field-group.scss';
+@import './components/field.scss';
+@import './components/radio-group.scss';
+@import './components/checkbox-group.scss';
+
