@@ -1,16 +1,14 @@
 .hero {
-  background: linear-gradient(to top, rgba(255,255,255,1) 37%, rgba(104,183,56,0.85) 37%), url("../img/backgrounds/bg-cat-mobile.jpg");
+  background: linear-gradient(to top, rgba(255, 255, 255, 1) 37%, rgba(104, 183, 56, 0.85) 37%), url("../img/backgrounds/bg-cat-mobile.jpg");
   background-repeat: no-repeat;
 }
 
 .hero__title {
   @include title;
-
   font-size: 36px;
   line-height: 36px;
   text-align: center;
   color: $light-text;
-
   width: 249px;
   margin: 0 auto;
   padding-top: 27px;
@@ -23,7 +21,6 @@
   text-align: center;
   text-transform: uppercase;
   color: $light-text;
-
   margin-bottom: 29px;
 }
 

@@ -3,14 +3,12 @@
   @include border-block;
   border-left: none;
   border-right: none;
-
   padding: 22px 20px 19px 20px;
   margin-bottom: 26px;
 }
 
 .radio-group__list {
   @include list-reset;
-
   display: flex;
   flex-direction: column;
   gap: 25px;

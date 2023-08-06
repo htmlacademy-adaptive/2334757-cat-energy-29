@@ -1,19 +1,16 @@
 .card-upsale {
   @include border-bottom;
-
   width: 280px;
   padding: 12px 0 19px 0;
 
   &:first-child {
-    border-top: 1px solid #CDCDCD;
+    border-top: 1px, solid, #cdcdcd;
   }
 }
 
 .card-upsale__title {
   @include title;
-
   color: #222222;
-
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
