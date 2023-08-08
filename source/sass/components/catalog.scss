@@ -3,13 +3,6 @@
   width: 280px;
 }
 
-.catalog__title {
-  @include title;
-  font-size: 36px;
-  line-height: 36px;
-  margin-bottom: 41px;
-}
-
 .catalog__list {
   @include list-reset;
   display: grid;

@@ -1,20 +1,13 @@
 .card-upsale {
-  @include border-bottom;
+  border-bottom: $border;
   width: 280px;
   padding: 12px 0 19px 0;
 
   &:first-child {
-    border-top: 1px, solid, #cdcdcd;
+    border-top: $border;
   }
 }
 
-.card-upsale__title {
-  @include title;
-  color: #222222;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-}
 
 .card-upsale__information {
   display: flex;

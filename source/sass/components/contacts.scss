@@ -1,14 +1,7 @@
 .contacts {
   &--dark-background {
-    background-color: $second-color;
+    background-color: $secondary-color;
   }
-}
-
-.contacts__title {
-  @include title;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
 }
 
 .contacts__wrapper {
@@ -17,6 +10,6 @@
 }
 
 .contacts__adress {
-  font-style: normal;
-  line-height: 20px;
+  font-size: $primary-font-size;
+  line-height: $h3-line-height;
 }

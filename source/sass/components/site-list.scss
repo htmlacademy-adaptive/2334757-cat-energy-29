@@ -2,7 +2,6 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  gap: 46px;
 }
 
 .site-list__item {
@@ -10,8 +9,14 @@
 }
 
 .site-list__link {
-  @include title;
+  font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
+  color: $dark-text-color;
   text-transform: uppercase;
+
+  display: block;
+  padding: 22px 24px;
+
+  border-top: $border;
 }

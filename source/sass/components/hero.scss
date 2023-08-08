@@ -1,31 +1,37 @@
 .hero {
+  width: 320px;
+  padding: 0;
   background: linear-gradient(to top, rgba(255, 255, 255, 1) 37%, rgba(104, 183, 56, 0.85) 37%), url("../img/backgrounds/bg-cat-mobile.jpg");
   background-repeat: no-repeat;
+  background-position: top center;
+
+  margin-bottom: 20px;
 }
 
+
 .hero__title {
-  @include title;
-  font-size: 36px;
-  line-height: 36px;
+  @include big-title;
+  color: $light-text-color;
+  line-height: 38px;
   text-align: center;
-  color: $light-text;
-  width: 249px;
-  margin: 0 auto;
+
   padding-top: 27px;
   margin-bottom: 25px;
 }
 
 .hero__subtitle {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
+  font-size: $primary-font-size;
   line-height: 14px;
-  text-align: center;
   text-transform: uppercase;
-  color: $light-text;
+  color: $light-text-color;
+  text-align: center;
+
   margin-bottom: 29px;
 }
 
 .hero__button {
   display: block;
   margin: 0 auto;
-  padding: 7px 0;
+  padding: 14px 44px;
 }

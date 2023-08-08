@@ -1,13 +1,55 @@
 .programm {
-  background-color: $second-color;
+  background-color: $secondary-color;
   width: 280px;
   min-height: 266px;
+
+  padding: 30px 33px 18px 20px;
+  box-sizing: border-box;
 }
 
 .programm__title {
-  @include title;
+  @include small-title;
+
   font-size: 24px;
   line-height: 37px;
-  text-transform: uppercase;
+
+  position: relative;
   margin-bottom: 29px;
+  margin-left: 70px;
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $primary-color;
+
+    position: absolute;
+    top: -20%;
+    left: -45%;
+  }
+}
+
+.programm__description {
+  @include base-text;
+
+  padding-bottom: 23px;
+  margin-bottom: 19px;
+
+  border-bottom: $border;
+}
+
+.programm__catalog-link {
+  @include small-title;
+  line-height: 16px;
+
+  position: relative;
+  padding-top: 19px;
+
+  &::after {
+    content: url("../img/icons/arrow-icon.svg");
+    position: absolute;
+    left: 120%;
+    bottom: 10%;
+  }
 }
