@@ -11,35 +11,50 @@
 }
 
 @mixin base-text {
-  font-size: $primary-font-size;
-  line-height: $primary-line-height;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
   color: $base-text-color;
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
-@mixin big-title {
+@mixin general-title {
   margin: 0;
   font-family: $secondary-font;
   color: $dark-text-color;
-  font-size: $h2-font-size;
-  line-height: $h2-line-height;
+  font-size: 36px;
+  line-height: 100%;
   font-weight: 400;
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+  }
 }
 
-@mixin small-title {
+@mixin block-title {
   margin: 0;
   font-family: $secondary-font;
-  color: $h3-text-color;
-  font-size: $h3-font-size;
-  line-height: $h3-line-height;
-  text-transform: uppercase;
+  color: $dark-text-color;
+  font-size: 36px;
+  line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 @mixin text-form {
   font-family: $secondary-font;
-  font-size: $form-font-size;
-  line-height: $form-line-height;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
+  color: $base-text-color;
 }
 
 @mixin lined-title {

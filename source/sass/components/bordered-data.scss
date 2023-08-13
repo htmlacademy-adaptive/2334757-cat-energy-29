@@ -1,0 +1,66 @@
+.bordered-data {
+  position: relative;
+}
+
+.bordered-data__value {
+  border: $border;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $dark-text-color;
+  text-transform: uppercase;
+
+  width: 124px;
+  padding: 15px 0 18px 0;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    font-size: 30px;
+    line-height: 37px;
+
+    width: 162px;
+    padding: 15px 0 20px 0;
+  }
+}
+
+.bordered-data__info {
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $base-text-color;
+
+  background-color: $secondary-color;
+  width: 77px;
+  display: inline-block;
+  position: absolute;
+  top: 48px;
+  right: 24px;
+  z-index: 1;
+
+  @media (min-width: $width-tablet) {
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: $body-color;
+
+    width: 96px;
+    padding: 0 10px;
+    top: 64px;
+    right: 23px;
+
+    &--full {
+      width: 125px;
+      top: 64px;
+      right: 8px;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .bordered-data__info {
+    background-color: $secondary-color;
+  }
+}

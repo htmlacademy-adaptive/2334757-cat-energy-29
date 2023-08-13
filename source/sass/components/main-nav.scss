@@ -1,4 +1,18 @@
-.main-nav__wrapper {
-  margin: 0 auto;
-  width: 320px;
+@media (min-width: $width-tablet) {
+  .main-nav {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-nav {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    z-index: 1;
+
+    padding-right: 110px;
+  }
 }

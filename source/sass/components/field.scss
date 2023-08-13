@@ -1,6 +1,5 @@
 .field__title {
   @include text-form;
-  max-width: 94px;
   white-space: nowrap;
 }
 
@@ -13,7 +12,7 @@
   appearance: none;
 
   &--comment {
-    width: 280px;
+    min-width: 280px;
     min-height: 150px;
     box-sizing: border-box;
   }

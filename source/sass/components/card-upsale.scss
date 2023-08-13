@@ -1,6 +1,5 @@
 .card-upsale {
   border-bottom: $border;
-  width: 280px;
   padding: 12px 0 19px 0;
 
   &:first-child {
@@ -12,8 +11,4 @@
 .card-upsale__information {
   display: flex;
   justify-content: space-between;
-}
-
-.card-upsale__button {
-  padding: 10px 0;
 }

@@ -5,6 +5,8 @@
 @import "./global/fonts.scss";
 
 // Часто используемые
+@import "./components/logo.scss";
+@import "./components/bordered-data.scss";
 @import "./components/button.scss";
 @import "./components/header.scss";
 @import "./components/site-list.scss";

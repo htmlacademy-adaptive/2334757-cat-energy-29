@@ -1,12 +1,14 @@
 .button {
   background-color: $primary-color;
   font-family: $secondary-font;
-  font-size: $primary-font-size;
-  line-height: $primary-line-height;
+  font-size: 16px;
+  line-height: 20px;
   color: $light-text-color;
   text-transform: uppercase;
   text-align: center;
   border: none;
+
+  box-sizing: content-box;
 
   &--secondary {
     background-color: $secondary-color;
