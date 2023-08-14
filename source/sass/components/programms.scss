@@ -1,0 +1,31 @@
+.programms {
+  margin-bottom: 20px;
+}
+
+.programms__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .programms {
+    margin-bottom: 45px;
+  }
+
+  .programms__list {
+    gap: 30px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .programms {
+    margin-bottom: 71px;
+  }
+
+  .programms__list {
+    flex-direction: row;
+    gap: 80px;
+  }
+}

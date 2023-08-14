@@ -1,0 +1,15 @@
+.checkbox-group {
+  @include fieldset-reset;
+}
+
+.checkbox-group__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin-bottom: 34px;
+}
+
+.checkbox-group__label {
+  @include text-form;
+}

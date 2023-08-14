@@ -1,0 +1,14 @@
+.card-upsale {
+  border-bottom: $border;
+  padding: 12px 0 19px 0;
+
+  &:first-child {
+    border-top: $border;
+  }
+}
+
+
+.card-upsale__information {
+  display: flex;
+  justify-content: space-between;
+}

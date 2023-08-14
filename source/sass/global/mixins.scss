@@ -1,0 +1,76 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin fieldset-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@mixin base-text {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $base-text-color;
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@mixin general-title {
+  margin: 0;
+  font-family: $secondary-font;
+  color: $dark-text-color;
+  font-size: 36px;
+  line-height: 100%;
+  font-weight: 400;
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+  }
+}
+
+@mixin block-title {
+  margin: 0;
+  font-family: $secondary-font;
+  color: $dark-text-color;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@mixin text-form {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $base-text-color;
+}
+
+@mixin lined-title {
+  margin: 0;
+  font-size: $lined-title-font-size;
+  line-height: $lined-title-line-height;
+  color: $dark-text-color;
+
+  ::after {
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: $primary-color;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,18 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__text {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $base-text-color;
+}
+
+@media (min-width: $width-tablet) {
+  .copyright__link {
+    gap: 23px;
+  }
+}

@@ -1,0 +1,6 @@
+.catalog__list {
+  @include list-reset;
+  display: grid;
+  gap: 25px;
+  margin-bottom: 25px;
+}

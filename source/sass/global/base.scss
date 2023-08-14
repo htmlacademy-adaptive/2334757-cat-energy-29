@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 100%;
+  color: $base-text-color;
+}
+
+img {
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .container {
+    max-width: 768px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .container {
+    max-width: 1440px;
+    padding: 0 110px;
+  }
+}
