@@ -1,135 +1,156 @@
 .hero {
-  background: url("../img/backgrounds/bg-cat-mobile.jpg"), linear-gradient(90deg, rgba(100, 167, 60, 1) 0%, rgba(100, 167, 60, 1) 47%, rgba(98, 165, 59, 1) 100%);
-  background-repeat: no-repeat;
-  background-position: top center;
-  height: 302px;
+  text-align: center;
 
-  position: relative;
-  margin-bottom: 195px;
+  margin-bottom: 20px;
 }
 
 .hero__wrapper {
-  text-align: center;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+.hero__bg {
+  background: url("../img/backgrounds/bg-cat-mobile.jpg"), linear-gradient(90deg, rgba(100, 167, 60, 1) 0%, rgba(100, 167, 60, 1) 47%, rgba(98, 165, 59, 1) 100%);
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  min-height: 305px;
+  padding: 27px 0 170px 0;
 }
 
 .hero__title {
-  @include general-title;
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
   color: $light-text-color;
+  max-width: 255px;
+  font-weight: 400;
 
-  padding-top: 27px;
-  margin-bottom: 25px;
+  margin: 0 auto;
 }
 
 .hero__subtitle {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
-  color: $light-text-color;
   text-transform: uppercase;
+  color: $light-text-color;
 
   margin: 0;
-  margin-bottom: 29px;
+  margin-top: 25px;
 }
 
-.hero__button {
-  display: block;
-  margin: 0 auto;
-  padding: 8px 44px;
+.hero__img {
+  width: 280px;
+  height: 270px;
+  object-fit: contain;
 }
 
-@media (min-width: $width-tablet) {
+.hero__product {
+  display: flex;
+  flex-direction: column;
+  margin-top: -135px;
+}
+
+
+@media (min-width: 768px) {
   .hero {
-    background: none;
-    height: fit-content;
-
-    margin: 0 auto;
+    margin-bottom: 0;
   }
 
-  .hero__wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
-    text-align: center;
-
-    padding: 0 120px;
+  .hero__bg {
+    background: none;
   }
 
   .hero__title {
-    @include general-title;
-    padding-top: 40px;
-    margin-bottom: 40px;
+    color: $dark-text-color;
     text-align: left;
-    order: -2;
+    font-size: 60px;
+    line-height: 60px;
+    max-width: 420px;
+    margin: 0;
+    margin-left: 90px;
+    position: relative;
+    z-index: 1;
   }
 
   .hero__subtitle {
+    color: $dark-text-color;
+    margin-top: 40px;
+    margin-left: 90px;
+    margin-bottom: 21px;
+    text-align: left;
     font-size: 20px;
     line-height: 20px;
-    color: $dark-text-color;
-    text-align: left;
+    position: relative;
+    z-index: 1;
+  }
 
-    margin-bottom: 50px;
-    order: -2;
+  .hero__picture {
+    order: 2;
+    margin-top: -90px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero__img {
+    width: 709px;
+    height: 609px;
   }
 
   .hero__button {
-    font-size: 20px;
-    padding: 14px 26px;
-    margin: 0 auto 0 0;
-    order: -1;
+    order: 1;
+    position: relative;
     z-index: 1;
-    border: 1px solid #000000;
-  }
-
-  .hero__product-image {
-    margin-top: -83px;
-    margin-left: -90px;
+    margin-left: 90px;
+    margin-right: auto;
   }
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: 1440px) {
   .hero {
-    background: url("../img/backgrounds/bg-cat-desktop.jpg"), linear-gradient(to right, #ffffff 50%, #64a73d 50%);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-
-    position: relative;
+    margin-top: -171px;
     margin-bottom: 82px;
-
-    min-height: 720px;
   }
 
   .hero__wrapper {
-    position: absolute;
-    top: 28%;
-    left: 27%;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+    background-image: url("../../img/backgrounds/bg-cat-desktop.jpg"), linear-gradient(90deg, #ffffff 50%, #64a73d 50%);
+    background-repeat: no-repeat;
+    background-position: right 50%;
 
-    padding: 0 120px;
+    padding-top: 220px;
+    min-height: 700px;
+
+    position: relative;
+  }
+
+  .hero__title {
+    margin-left: 0;
+  }
+
+  .hero__subtitle {
+    margin-left: 0;
+  }
+
+  .hero__product {
+    width: 100%;
+  }
+
+  .hero__picture {
+    position: absolute;
+    top: 177px;
+    left: 50%;
+    transform: translateX(-30%);
+    margin: 0;
+  }
+
+  .hero__img {
+    width: 552px;
+    height: 449px;
   }
 
   .hero__button {
-    border: none;
-  }
-
-  .hero__product-image {
-    margin: 0;
-
-    position: absolute;
-    left: 33%;
-    transform: translate(50%);
-    top: -12%;
-    width: 552px;
-    height: 499px;
+    margin-left: 0;
   }
 }
-

@@ -1,11 +1,10 @@
 // Базовые
-@import "./global/base.scss";
 @import "./global/variables.scss";
-@import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/mixins.scss";
+@import "./global/base.scss";
 
 // Часто используемые
-@import "./components/logo.scss";
 @import "./components/bordered-data.scss";
 @import "./components/button.scss";
 @import "./components/header.scss";
