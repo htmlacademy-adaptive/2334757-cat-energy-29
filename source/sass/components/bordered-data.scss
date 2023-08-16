@@ -1,5 +1,5 @@
 .bordered-data {
-  position: relative;
+  // position: relative;
 }
 
 .bordered-data__value {
@@ -12,8 +12,7 @@
 
   width: 124px;
   padding: 15px 0 18px 0;
-  display: block;
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
 
   @media (min-width: $width-tablet) {
@@ -33,29 +32,20 @@
   color: $base-text-color;
 
   background-color: $secondary-color;
-  width: 77px;
-  display: inline-block;
-  position: absolute;
-  top: 48px;
-  right: 24px;
-  z-index: 1;
+
+  display: block;
+  margin: 0 auto;
+  margin-top: -10px;
+  padding: 0 10px;
+  max-width: 77px;
 
   @media (min-width: $width-tablet) {
     font-size: 14px;
     line-height: 14px;
 
     background-color: $body-color;
-
-    width: 96px;
     padding: 0 10px;
-    top: 64px;
-    right: 23px;
-
-    &--full {
-      width: 125px;
-      top: 64px;
-      right: 8px;
-    }
+    max-width: fit-content;
   }
 }
 

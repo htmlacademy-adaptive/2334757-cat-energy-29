@@ -7,7 +7,8 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 26px 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .contacts__title {
@@ -40,16 +41,13 @@
   margin: 0;
 }
 
-.contacts__map-location {
+.contacts__map {
   display: block;
   margin: 0 auto;
-  width: 320px;
-  height: 362px;
 }
 
 @media (min-width: $width-tablet) {
   .contacts__wrapper {
-    gap: 16px;
     padding: 61px 40px;
   }
 
@@ -57,7 +55,7 @@
     font-size: 20px;
     line-height: 26px;
 
-    width: 163px;
+    width: 160px;
   }
 
   .contacts__adress {
@@ -70,24 +68,14 @@
   .contacts__street {
     margin-bottom: 20px;
   }
-
-  .contacts__map-location {
-    width: 768px;
-    height: 400px;
-  }
 }
 
 @media (min-width: $width-desktop) {
   .contacts {
     position: relative;
-    width: 1440px;
+    width: 1220px;
 
     margin: 0 auto;
-  }
-
-  .contacts__map-location {
-    width: 1440px;
-    height: 400px;
   }
 
   .contacts__wrapper {
@@ -100,7 +88,6 @@
     margin: 0 auto;
     padding: 60px 80px;
     width: 565px;
-    box-sizing: border-box;
     background-color: $body-color;
   }
 }

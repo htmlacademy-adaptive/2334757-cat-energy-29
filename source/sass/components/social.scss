@@ -9,7 +9,7 @@
   gap: 24px;
   align-items: center;
   margin: 0 auto;
-  width: 132px;
+  min-width: 132px;
 }
 
 @media (min-width: $width-tablet) {
