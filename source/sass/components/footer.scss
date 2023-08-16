@@ -1,6 +1,10 @@
 .footer {
-  padding: 20px 20px;
   background-color: $secondary-color;
+}
+
+.footer__wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer__logo-text {
@@ -21,7 +25,8 @@
 
 @media (min-width: $width-tablet) {
   .footer__wrapper {
-    padding: 41px 10px;
+    padding-top: 55px;
+    padding-bottom: 55px;
     display: flex;
     justify-content: space-between;
   }
@@ -43,11 +48,8 @@
 }
 
 @media (min-width: $width-desktop) {
-  .footer {
-    padding: 72px 110px;
-  }
-
   .footer__wrapper {
-    padding: 0;
+    padding-top: 73px;
+    padding-bottom: 73px;
   }
 }
