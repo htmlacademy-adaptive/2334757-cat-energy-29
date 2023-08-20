@@ -14,10 +14,10 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     width: 30px;
     height: 2px;
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
 
     position: absolute;
     top: 20%;
@@ -26,10 +26,10 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     width: 30px;
     height: 2px;
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
 
     position: absolute;
     top: 20%;
@@ -85,15 +85,15 @@
     padding: 30px 37px 40px 37px;
     position: relative;
 
-      &--big {
-        padding-top: 12px;
-      }
+    &--big {
+      padding-top: 12px;
+    }
 
-      &--more {
-        background: none;
-        padding: 0;
-        padding-top: 80px;
-      }
+    &--more {
+      background: none;
+      padding: 0;
+      padding-top: 80px;
+    }
   }
 
   .card__wrapper {
@@ -106,12 +106,12 @@
     border: 2px solid #f2f2f2;
 
     &::before {
-      content: '';
+      content: "";
       width: 60px;
     }
 
     &::after {
-      content: '';
+      content: "";
       width: 60px;
       transform: rotate(90deg) translateY(1400%);
     }
@@ -174,13 +174,13 @@
     min-width: 245px;
     background: linear-gradient(to bottom, #ffffff 16%, #f2f2f2 16%);
 
-      &--big {
-        padding-top: 17px;
-      }
+    &--big {
+      padding-top: 17px;
+    }
 
-      &--more {
-        background: none;
-      }
+    &--more {
+      background: none;
+    }
   }
 
   .card--more .card__wrapper {
