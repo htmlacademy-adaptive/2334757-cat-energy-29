@@ -1,3 +1,28 @@
 .upsale__list {
   @include list-reset;
 }
+
+.upsale__title {
+  @include lined-title;
+
+  margin-bottom: 36px;
+}
+
+@media (min-width: $width-tablet) {
+  .upsale__list {
+    margin-bottom: 70px;
+  }
+}
+
+
+@media (min-width: $width-desktop) {
+  .upsale__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 87px;
+  }
+
+  .upsale__list {
+    margin-bottom: 0;
+  }
+}

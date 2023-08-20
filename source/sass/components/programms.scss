@@ -6,6 +6,7 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -27,5 +28,9 @@
   .programms__list {
     flex-direction: row;
     gap: 80px;
+  }
+
+  .programms__item {
+    width: calc(50% - 40px);
   }
 }

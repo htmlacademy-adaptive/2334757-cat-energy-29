@@ -1,8 +1,9 @@
 .gift {
   margin-bottom: 35px;
-  min-height: 290px;
-  background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(104, 183, 56, 0.85) 0%), url("../img/backgrounds/bg-cat-backpack.jpg");
+  background: url("../img/backgrounds/bg-cat-backpack.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .gift__description {
@@ -10,13 +11,69 @@
   line-height: 20px;
   text-align: center;
   color: $light-text-color;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 181px 61px 43px 58px;
+  max-width: 280px;
+
   position: relative;
 
   &::before {
     content: url("../img/icons/gift-icon.svg");
     position: absolute;
-    top: 20%;
-    left: 36%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .gift {
+    background: url("../img/backgrounds/bg-cat-backpack-tablet.jpg"), linear-gradient(90deg, #5ca033 50%, #7ec255 50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 75px;
+  }
+
+  .gift__description {
+    padding: 70px 125px 70px 420px;
+    margin: 0 auto;
+    max-width: 768px;
+
+    text-align: left;
+
+    &::before {
+      top: 50%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .gift {
+    background: url("../img/backgrounds/bg-cat-backpack.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    max-width: 245px;
+    margin-bottom: 0;
+  }
+
+  .gift__description {
+    padding: 185px 42px 42px;
+    margin: 0;
+    text-align: center;
+
+    position: relative;
+
+    &::before {
+      content: url("../img/icons/gift-icon.svg");
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }

@@ -16,7 +16,7 @@ body {
 }
 
 img {
-  width: 100%;
+  object-fit: contain;
   height: auto;
 }
 
@@ -26,6 +26,12 @@ a {
 
 button {
   cursor: pointer;
+}
+
+dl,
+dt,
+dd {
+  margin: 0;
 }
 
 .visually-hidden {
@@ -40,14 +46,11 @@ button {
 }
 
 .container {
-  max-width: 320px;
-  margin: 0 auto;
   padding: 0 20px;
 }
 
 @media (min-width: $width-tablet) {
   .container {
-    max-width: 768px;
     padding: 0 30px;
   }
 }
@@ -55,6 +58,7 @@ button {
 @media (min-width: $width-desktop) {
   .container {
     max-width: 1440px;
+    margin: 0 auto;
     padding: 0 110px;
   }
 }
