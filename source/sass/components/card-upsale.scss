@@ -1,14 +1,78 @@
 .card-upsale {
   border-bottom: $border;
-  padding: 12px 0 19px 0;
+  padding: 13px 0 19px 0;
 
   &:first-child {
     border-top: $border;
   }
 }
 
+.card-upsale__title {
+  @include card-title
+}
 
 .card-upsale__information {
   display: flex;
   justify-content: space-between;
+
+  margin-top: 13px;
+  margin-bottom: 15px;
+}
+
+.card-upsale__button {
+  width: 100%;
+}
+
+@media (min-width: $width-tablet) {
+  .card-upsale {
+    padding: 26px 38px 28px;
+    border: $border;
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: $border;
+    }
+  }
+
+  .card-upsale__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 25px;
+  }
+
+  .card-upsale__information {
+    margin: 0;
+    min-width: 200px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .card-upsale {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+
+    width: 895px;
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .card-upsale__wrapper {
+    display: grid;
+    grid-template-columns: 290px 215px 55px;
+    align-items: center;
+    gap: 35px;
+
+    margin-bottom: 0;
+  }
+
+  .card-upsale__information {
+    font-size: 16px;
+    line-height: 20px;
+    display: grid;
+    grid-template-columns: 215px 50px;
+    gap: 35px;
+  }
 }

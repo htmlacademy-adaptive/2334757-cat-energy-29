@@ -1,8 +1,5 @@
 .button {
-
   font-family: $secondary-font;
-
-
   font-size: 14px;
   line-height: 18px;
   background-color: $primary-color;
@@ -12,7 +9,6 @@
   text-transform: uppercase;
 
   color: $light-text-color;
-
   border: none;
 
   display: inline-block;
@@ -24,10 +20,10 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $width-tablet) {
   .button {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
-    padding: 17px 26px;
+    padding: 11px 26px;
   }
 }

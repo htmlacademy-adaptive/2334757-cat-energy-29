@@ -33,12 +33,12 @@
               </a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">
+              <a class="header__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">
+              <a class="header__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -61,8 +61,8 @@
           </div>
           <div class="hero__product container">
             <picture class="hero__picture">
-              <source media="(min-width: 768px)" srcset="img/content/product-tablet.png" />
-              <source media="(min-width: 1440px)" srcset="img/content/product-desktop.png" />
+              <source media="(min-width: 768px)" srcset="img/content/product-tablet.png"/>
+              <source media="(min-width: 1440px)" srcset="img/content/product-desktop.png"/>
               <img class="hero__img" src="img/content/product-mobile.png" alt="Функциональное питание Cat Energy.">
             </picture>
             <a class="hero__button button" href="form.html">
@@ -76,10 +76,14 @@
           <h2 class="programms__title visually-hidden">Программы.</h2>
           <ul class="programms__list">
             <li class="programms__item programm">
-              <img class="programm__img programm__img--slim" src="img/icons/cat-slim.svg" width="36" height="50" alt="Иконка стройной кошки.">
-              <h3 class="programm__title">
-                Похудение
-              </h3>
+              <div class="programm__wrapper">
+                <div class="programm__icon">
+                  <img class="programm__img programm__img--slim" src="img/icons/cat-slim.svg" width="36" height="50" alt="Иконка маленькой кошки.">
+                </div>
+                <h3 class="programm__title">
+                  Похудение
+                </h3>
+              </div>
               <p class="programm__description">
                 Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
@@ -89,17 +93,19 @@
             </li>
             <li class="programms__item programm">
               <div class="programm__wrapper">
-                <img class="programm__img programm__img--pro" src="img/icons/cat-pro.svg" width="67" height="28" alt="Иконка мышечной кошки.">
+                <div class="programm__icon">
+                  <img class="programm__img programm__img--pro" src="img/icons/cat-pro.svg" width="67" height="28" alt="Иконка большой кошки.">
+                </div>
                 <h3 class="programm__title">
                   Набор массы
                 </h3>
-                <p class="programm__description">
-                  Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-                </p>
-                <a class="programm__catalog-link" href="#">
-                  Каталог pro
-                </a>
               </div>
+              <p class="programm__description">
+                Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              </p>
+              <a class="programm__catalog-link" href="#">
+                Каталог pro
+              </a>
             </li>
           </ul>
         </div>
