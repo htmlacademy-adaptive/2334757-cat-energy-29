@@ -2,7 +2,7 @@
   padding-top: 27px;
   border-top: $border;
 
-  margin-bottom: 25px;
+  margin-bottom: 42px;
 }
 
 .catalog__title {
@@ -20,7 +20,7 @@
 @media (min-width: $width-tablet) {
   .catalog__wrapper {
     padding-top: 27px;
-    margin-bottom: 40px;
+    margin-bottom: 93px;
     border: none;
   }
 
@@ -30,7 +30,7 @@
 
   .catalog__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 324px);
+    grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
 }
@@ -42,7 +42,7 @@
   }
 
   .catalog__list {
-    grid-template-columns: repeat(auto-fit, 245px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
     row-gap: 63px;
   }

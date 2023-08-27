@@ -14,9 +14,19 @@
   align-items: center;
 }
 
+.header__nav-nojs {
+  margin-top: 15px;
+  margin-bottom: -15px;
+}
+
 .header__nav {
   margin-top: 15px;
   margin-bottom: -15px;
+
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  background-color: $body-color;
 
   display: none;
 
@@ -31,6 +41,10 @@
   &:last-child {
     padding-bottom: -15px;
   }
+}
+
+.header__button-nojs {
+  // display: none;
 }
 
 .header__button {
@@ -85,7 +99,6 @@
   }
 }
 
-
 .header__link {
 
   font-family: $secondary-font;
@@ -111,7 +124,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $width-tablet) {
   .header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -131,6 +144,9 @@
   .header__nav {
     display: block;
     margin-top: 0;
+
+    position: static;
+    background-color: transparent;
   }
 
   .header__list {
