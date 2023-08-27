@@ -62,11 +62,17 @@
   position: relative;
 
   &::after {
-    content: url("../img/icons/arrow-icon.svg");
+    content: "";
+    background: url("../img/icons/arrow-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 12px;
 
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 0%;
     transform: translateY(-50%);
   }
 }

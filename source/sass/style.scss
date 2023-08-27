@@ -1,6 +1,6 @@
 // Базовые
-@import "./global/variables.scss";
 @import "./global/fonts.scss";
+@import "./global/variables.scss";
 @import "./global/mixins.scss";
 @import "./global/base.scss";
 
@@ -31,7 +31,7 @@
 @import "./components/upsale.scss";
 
 // Блоки form
-// @import "./components/programm-selection.scss";
+@import "./components/programm-selection.scss";
 @import "./components/field-group.scss";
 @import "./components/field.scss";
 @import "./components/radio-group.scss";

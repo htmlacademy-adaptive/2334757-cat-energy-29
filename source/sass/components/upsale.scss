@@ -1,16 +1,34 @@
+.upsale {
+  position: relative;
+
+  &::before {
+    @include block-line;
+  }
+}
+
+.upsale__wrapper {
+  position: relative;
+}
+
 .upsale__list {
   @include list-reset;
+  padding-top: 36px;
 }
 
 .upsale__title {
   @include lined-title;
 
-  margin-bottom: 36px;
+  margin-top: -15px;
 }
 
 @media (min-width: $width-tablet) {
   .upsale__list {
     margin-bottom: 70px;
+    padding-top: 80px;
+  }
+
+  .upsale__title {
+    margin-top: -22px;
   }
 }
 

@@ -1,3 +1,31 @@
+.card {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: #ebebeb;
+    width: 100vw;
+    height: 1px;
+
+    position: absolute;
+    left: -20px;
+  }
+}
+
+.card--more {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: #ebebeb;
+    width: 100vw;
+    height: 1px;
+
+    position: absolute;
+    left: -20px;
+  }
+}
+
 .card__wrapper {
   display: flex;
   justify-content: space-between;
@@ -85,6 +113,10 @@
     padding: 30px 37px 40px 37px;
     position: relative;
 
+    &::before {
+      display: none;
+    }
+
     &--big {
       padding-top: 12px;
     }
@@ -92,7 +124,11 @@
     &--more {
       background: none;
       padding: 0;
-      padding-top: 80px;
+      padding-top: 82px;
+
+      &::after {
+        display: none;
+      }
     }
   }
 
@@ -102,7 +138,7 @@
   }
 
   .card--more .card__wrapper {
-    padding: 160px 37px 40px 37px;
+    padding: 162px 37px 40px 37px;
     border: 2px solid #f2f2f2;
 
     &::before {
@@ -128,6 +164,10 @@
     text-align: center;
 
     margin: 0 auto;
+    max-width: 135px;
+  }
+
+  .card--more .card__title {
     max-width: 135px;
   }
 
