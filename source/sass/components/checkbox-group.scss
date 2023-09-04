@@ -83,10 +83,9 @@
     opacity: 0.3;
     cursor: default;
   }
-  }
+}
 
 @media (min-width: $width-desktop) {
-
   .checkbox-group__list {
     grid-template-columns: repeat(4, 250px);
     gap: 75px;

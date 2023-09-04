@@ -182,7 +182,6 @@
     flex-direction: row;
     gap: 33px;
     max-width: 455px;
-
   }
 
   .header__item {
@@ -202,10 +201,9 @@
 
     &--current {
       border-color: $primary-color;
-  }
+    }
   }
 }
-
 
 @media (min-width: $width-desktop) {
   .header__wrapper {
