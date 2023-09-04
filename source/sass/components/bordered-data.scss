@@ -1,7 +1,3 @@
-.bordered-data {
-  // position: relative;
-}
-
 .bordered-data__value {
   border: $border;
   font-family: $secondary-font;
@@ -45,7 +41,7 @@
 
     background-color: $body-color;
     padding: 0 10px;
-    max-width: fit-content;
+    max-width: 145px;
   }
 }
 

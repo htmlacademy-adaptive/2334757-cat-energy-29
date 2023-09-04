@@ -12,6 +12,15 @@
   justify-content: center;
   padding: 20px 0;
   border-bottom: $border;
+  cursor: pointer;
+}
+
+.footer__logo-text:hover {
+  opacity: 0.8;
+}
+
+.footer__logo-text:active {
+  opacity: 0.6;
 }
 
 .footer__social {
@@ -40,6 +49,7 @@
     border-bottom: none;
     padding: 0;
     padding-left: 40px;
+    max-width: 350px;
   }
 
   .footer__copyright {

@@ -18,6 +18,7 @@
   @include list-reset;
 
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -58,12 +59,12 @@
 
   .example__number-list {
     display: flex;
-    align-items: center;
     margin-bottom: 100px;
   }
 
   .example__list {
     margin-bottom: 0;
+    max-width: 550px;
   }
 
   .example__costs {
@@ -85,20 +86,6 @@
   .example__before {
     width: 100%;
   }
-
-  // .example__after {
-  //   width: 560px;
-  //   height: 512px;
-
-  //   position: absolute;
-  //   bottom: 0;
-  //   right: -70px;
-  // }
-
-  // .example__toggle {
-  //   position: absolute;
-  //   bottom: 0;
-  // }
 }
 
 @media (min-width: $width-desktop) {
@@ -132,14 +119,16 @@
   }
 
   .example__costs {
+    display: flex;
+    gap: 63px;
     margin: 0;
-    margin-left: 0;
-    width: 366px;
     text-align: left;
+
+    width: 335px;
   }
 
   .example__costs span {
-    margin-left: 55px;
+    min-width: 100px;
   }
 
   .example__slider {
@@ -147,23 +136,4 @@
     top: 30px;
     left: 50%;
   }
-
-  // .example__before {
-  //   position: absolute;
-  //   top: 60px;
-  //   right: 115px;
-  // }
-
-  // .example__after {
-  //   position: absolute;
-  //   top: 65px;
-  // }
-
-  // .example__toggle {
-  //   display: block;
-  //   position: absolute;
-  //   bottom: auto;
-  //   top: 265px;
-  //   right: 38px;
-  // }
 }

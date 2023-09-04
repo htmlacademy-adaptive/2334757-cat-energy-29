@@ -20,6 +20,22 @@
   }
 }
 
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba($light-text-color, 0.3);
+}
+
+.button--secondary:hover,
+.button--secondary:active {
+  background-color: #ebebeb;
+  color: $base-text-color;
+}
+
+
+
 @media (min-width: $width-tablet) {
   .button {
     font-size: 16px;

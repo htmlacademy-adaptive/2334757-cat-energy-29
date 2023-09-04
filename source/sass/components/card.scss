@@ -1,5 +1,6 @@
 .card {
   position: relative;
+  height: fit-content;
 
   &::before {
     content: "";
@@ -38,32 +39,6 @@
   display: block;
   padding-top: 78px;
   padding-bottom: 25px;
-
-  position: relative;
-
-  &::before {
-    content: "";
-    width: 30px;
-    height: 2px;
-    background-color: #d3d3d3;
-
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  &::after {
-    content: "";
-    width: 30px;
-    height: 2px;
-    background-color: #d3d3d3;
-
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: rotate(90deg) translateY(700%);
-  }
 }
 
 .card__image {
@@ -81,6 +56,32 @@
 .card--more .card__title {
   max-width: none;
   text-align: center;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: rotate(90deg) translateY(700%);
+  }
 }
 
 .card__subtitle {
@@ -103,13 +104,21 @@
   line-height: 16px;
 }
 
+.card__info {
+  max-width: 75px;
+}
+
+.card__value {
+  max-width: 55px;
+}
+
 .card__button {
   width: 100%;
 }
 
 @media (min-width: $width-tablet) {
   .card {
-    background: linear-gradient(to bottom, #ffffff 16%, #f2f2f2 16%);
+    background: linear-gradient(to bottom, #ffffff 80px, #f2f2f2 80px);
     padding: 30px 37px 40px 37px;
     position: relative;
 
@@ -140,17 +149,6 @@
   .card--more .card__wrapper {
     padding: 162px 37px 40px 37px;
     border: 2px solid #f2f2f2;
-
-    &::before {
-      content: "";
-      width: 60px;
-    }
-
-    &::after {
-      content: "";
-      width: 60px;
-      transform: rotate(90deg) translateY(1400%);
-    }
   }
 
   .card__list {
@@ -169,6 +167,19 @@
 
   .card--more .card__title {
     max-width: 135px;
+
+    &::before {
+      content: "";
+      top: -80px;
+      width: 60px;
+    }
+
+    &::after {
+      content: "";
+      top: -80px;
+      width: 60px;
+      transform: rotate(90deg) translateY(1400%);
+    }
   }
 
   .card__subtitle {
@@ -202,6 +213,10 @@
 
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .card__info {
+    max-width: 150px;
   }
 
   .card__button {
@@ -244,5 +259,9 @@
 
   .card__subtitle {
     margin-bottom: 90px;
+  }
+
+  .card__info {
+    max-width: 75px;
   }
 }
