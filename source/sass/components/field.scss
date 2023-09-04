@@ -1,6 +1,6 @@
 .field__title {
   @include text-form;
-  white-space: nowrap;
+  max-width: 250px;
 }
 
 .field__input {
@@ -9,10 +9,21 @@
   padding: 14px;
   width: 100%;
   border: 1px solid #e7e7e7;
-  appearance: none;
 
   &--comment {
     min-width: 280px;
     min-height: 150px;
+
+    @media (min-width: $width-tablet) {
+      min-height: 175px;
+    }
   }
+}
+
+.field__input:hover {
+  border-color: #cdcdcd;
+}
+
+.field__input--error {
+  border-color: #ff8282;
 }

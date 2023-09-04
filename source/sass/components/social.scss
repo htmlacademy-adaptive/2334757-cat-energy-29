@@ -6,6 +6,7 @@
 .social__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   align-items: center;
   margin: 0 auto;

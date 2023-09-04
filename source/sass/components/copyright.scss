@@ -1,4 +1,4 @@
-.copyright__link {
+.copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,8 +11,28 @@
   color: $base-text-color;
 }
 
+.copyright__logo:hover path {
+  fill: $primary-color;
+}
+
+.copyright__text:active {
+  opacity: 0.6;
+}
+
+.copyright__logo:active {
+  opacity: 0.6;
+}
+
 @media (min-width: $width-tablet) {
-  .copyright__link {
+  .copyright {
     gap: 23px;
+  }
+
+  .copyright:hover path {
+    fill: $primary-color;
+  }
+
+  .copyright:active path {
+    opacity: 0.6;
   }
 }

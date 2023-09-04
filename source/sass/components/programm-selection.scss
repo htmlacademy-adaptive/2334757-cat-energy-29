@@ -1,6 +1,5 @@
 .programm-selection__wrapper {
   padding-top: 27px;
-  padding-bottom: 32px;
 
   border-top: $border;
 }
@@ -31,6 +30,10 @@
   color: $dark-text-color;
 }
 
+.programm-selection__form {
+  margin-bottom: 32px;
+}
+
 @media (min-width: $width-tablet) {
   .programm-selection__wrapper {
     border: none;
@@ -57,7 +60,7 @@
 
   .programm-selection__button {
     width: auto;
-    padding: 14px 45px;
+    padding: 14px 65px;
 
     margin-bottom: 0;
   }
@@ -79,6 +82,7 @@
     display: grid;
     grid-template-columns: repeat(2, 570px);
     gap: 80px;
+    align-items: start;
 
     margin-bottom: 95px;
   }
@@ -89,11 +93,15 @@
   }
 
   .programm-selection__button {
-    padding: 14px 188px;
+    padding: 14px 208px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .programm-selection__note {
     font-size: 16px;
     line-height: 16px;
+
+    max-width: 250px;
   }
 }

@@ -26,23 +26,16 @@
 
   &::before {
     @include block-line;
-    width: 100vw;
-    left: -20px;
   }
 }
 
 .field-group--contacts .field-group__title {
   margin-top: -15px;
-  left: -20px;
-  max-width: 222px;
+  max-width: 230px;
 }
 
 .field-group--contacts .field-group__list {
   padding-top: 70px;
-}
-
-.field-group__wrapper {
-  padding-top: 47px;
 }
 
 .field-group--comment {
@@ -51,53 +44,42 @@
 
   &::before {
     @include block-line;
-    width: 100vw;
-    left: -20px;
   }
 }
 
 .field-group--comment .field-group__title {
   margin-top: -15px;
-  left: -20px;
-  max-width: 222px;
+  max-width: 230px;
 }
 
-.field-group__container {
+.field-group__comment-wrapper {
   padding-top: 47px;
 }
 
 @media (min-width: $width-tablet) {
   .field-group {
-    margin-bottom: 72px;
+    margin-bottom: 90px;
   }
 
   .field-group--contacts {
     margin-bottom: 90px;
+  }
 
-    &::before {
-      left: -70px;
-    }
+  .field-group__list {
+    padding-top: 0;
   }
 
   .field-group--contacts .field-group__title {
     margin-top: -23px;
-    left: -40px;
     max-width: none;
-  }
-
-  .field-group--comment {
-    &::before {
-      left: -70px;
-    }
   }
 
   .field-group--comment .field-group__title {
     margin-top: -23px;
-    left: -40px;
     max-width: none;
   }
 
-  .field-group__wrapper {
+  .field-group__comment-wrapper {
     padding-top: 100px;
   }
 }
@@ -107,30 +89,28 @@
     margin-bottom: 0;
   }
 
-  .field-group--contacts {
-    &::before {
-      left: -2000px;
-      width: 5000px;
-    }
+  .field-group__list {
+    padding-top: 0;
   }
 
   .field-group--contacts .field-group__list {
-    padding-top: 88px;
-    margin-bottom: 95px;
+    padding-top: 0;
 
     display: grid;
     grid-template-columns: repeat(2, 570px);
     gap: 80px;
   }
 
-  .field-group--comment {
-    &::before {
-      left: -2000px;
-      width: 5000px;
+  .field-group__wrapper {
+    padding-top: 90px;
+    margin-bottom: 95px;
+
+    &--checkbox {
+      padding-top: 68px;
     }
   }
 
-  .field-group__wrapper {
+  .field-group__comment-wrapper {
     padding-top: 90px;
     margin-bottom: 95px;
   }
