@@ -13,6 +13,30 @@
   min-width: 132px;
 }
 
+.social__vk,
+.social__youtube,
+.social__telegram {
+  fill: #666666;
+}
+
+.social__vk:hover,
+.social__youtube:hover,
+.social__telegram:hover  {
+  fill: $primary-color;
+}
+
+.social__link:focus-visible .social__vk,
+.social__link:focus-visible .social__youtube,
+.social__link:focus-visible .social__telegram {
+  fill: $primary-color;
+}
+
+.social__vk:active,
+.social__youtube:active,
+.social__telegram:active  {
+  opacity: 0.3;
+}
+
 @media (min-width: $width-tablet) {
   .social__link {
     display: flex;

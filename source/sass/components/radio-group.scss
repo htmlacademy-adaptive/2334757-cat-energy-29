@@ -77,6 +77,14 @@
   border-color: #bababa;
 }
 
+.radio-group__input-control[type="radio"]:hover + .radio-group__style-input {
+  border-color: #bababa;
+}
+
+.radio-group__input-control[type="radio"]:focus-visible + .radio-group__style-input {
+  border-color: #9a9898;
+}
+
 .radio-group__input-control[type="radio"]:disabled ~ span {
   opacity: 0.3;
   cursor: default;
@@ -103,7 +111,22 @@
 
 @media (min-width: $width-desktop) {
   .radio-group {
-    padding: 25px 28px;
+    padding: 27px;
     margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .radio-group__style-input {
+    width: 40px;
+    height: 40px;
+  }
+
+  .radio-group__input-control[type="radio"]:checked + .radio-group__style-input::after {
+    width: 18px;
+    height: 18px;
+  }
+
+  .radio-group__label {
+    padding-left: 60px;
   }
 }

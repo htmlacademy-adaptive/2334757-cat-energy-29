@@ -52,7 +52,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("../img/icons/mark-icon.svg");
+  background-image: url("../img/stack.svg#mark-icon");
+}
+
+.checkbox-group__input-control[type="checkbox"]:focus + .checkbox-group__style-input {
+  border-color: #9a9898;
 }
 
 @media (min-width: $width-tablet) {

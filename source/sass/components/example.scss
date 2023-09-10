@@ -37,6 +37,22 @@
   text-align: center;
 }
 
+.example__slider img {
+  display: block;
+  margin: 0 auto;
+
+  padding-bottom: 40px;
+}
+
+.example__slider-toggle {
+  border: none;
+}
+
+.example__slider-toggle use {
+  fill: $primary-color;
+  stroke: $primary-color;
+}
+
 @media (min-width: $width-tablet) {
   .example {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 60%, rgba(242, 242, 242, 1) 60%, rgba(242, 242, 242, 1) 100%);
@@ -76,11 +92,11 @@
     line-height: 30px;
   }
 
-  .example__slider {
+  .example__slider img {
     width: 560px;
     height: 512px;
 
-    margin: 0 auto;
+    padding-bottom: 0;
   }
 
   .example__before {
@@ -131,9 +147,9 @@
     min-width: 100px;
   }
 
-  .example__slider {
+  .example__slider img {
     position: absolute;
-    top: 30px;
+    top: 45px;
     left: 50%;
   }
 }

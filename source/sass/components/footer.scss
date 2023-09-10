@@ -15,7 +15,8 @@
   cursor: pointer;
 }
 
-.footer__logo-text:hover {
+.footer__logo-text:hover,
+.footer__logo-text:focus-visible {
   opacity: 0.8;
 }
 
