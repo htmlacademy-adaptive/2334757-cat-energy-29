@@ -1,0 +1,17 @@
+.title__wrapper {
+  position: relative;
+
+  &::after {
+    @include block-line;
+  }
+}
+
+.title {
+  @include lined-title;
+  max-width: max-content;
+  width: 95%;
+
+  @media (min-width: $width-tablet) {
+    width: 90%;
+  }
+}

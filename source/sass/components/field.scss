@@ -3,10 +3,41 @@
   max-width: 250px;
 }
 
+.field__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.field__wrapper--phone::after {
+  content: "";
+  mask-image: url("../img/stack.svg#phone-icon");
+  background-color: #000000;
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.field__wrapper--mail::after {
+  content: "";
+  mask-image: url("../img/stack.svg#mail-icon");
+  background-color: #000000;
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
 .field__input {
   @include text-form;
   display: block;
-  padding: 14px;
+  padding: 13px;
   width: 100%;
   border: 1px solid #e7e7e7;
 
@@ -26,4 +57,14 @@
 
 .field__input--error {
   border-color: #ff8282;
+}
+
+.field__wrapper--error::after {
+  background-color: #ff8282;
+}
+
+@media (min-width: $width-tablet) {
+  .field__input {
+    padding: 10px;
+  }
 }

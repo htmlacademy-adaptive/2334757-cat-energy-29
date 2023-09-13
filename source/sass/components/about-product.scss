@@ -17,6 +17,7 @@
 
 .about-product__item {
   @include base-text;
+  position: relative;
 
   &::before {
     content: "";
@@ -26,6 +27,18 @@
     float: left;
     margin-right: 20px;
   }
+}
+
+.about-product__icon {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+}
+
+.about-product__item span {
+  display: flex;
+  min-height: 60px;
+  align-items: center;
 }
 
 @media (min-width: $width-tablet) {
@@ -76,6 +89,12 @@
       right: 0;
       z-index: -1;
     }
+  }
+
+  .about-product__icon {
+    position: absolute;
+    top: 65px;
+    left: 25px;
   }
 }
 

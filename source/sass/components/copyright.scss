@@ -35,4 +35,12 @@
   .copyright:active path {
     opacity: 0.6;
   }
+
+  .copyright__text:focus + .copyright__logo path {
+    fill: $primary-color;
+  }
+
+  .copyright__logo:focus path {
+    fill: $primary-color;
+  }
 }

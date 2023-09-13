@@ -52,10 +52,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-
-  &:last-child {
-    padding-bottom: -15px;
-  }
 }
 
 .header__item {
@@ -158,6 +154,11 @@
     padding-bottom: 25px;
   }
 
+  .header__logo img {
+    width: 174px;
+    height: 50px;
+  }
+
   .header__logo-text,
   .header__logo-text--noactive {
     display: none;
@@ -209,6 +210,11 @@
   .header__wrapper {
     padding-top: 55px;
     padding-bottom: 55px;
+  }
+
+  .header__logo img {
+    width: 202px;
+    height: 59px;
   }
 
   .header__list {

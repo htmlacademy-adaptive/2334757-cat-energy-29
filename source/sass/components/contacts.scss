@@ -43,7 +43,7 @@
 
 .contacts__map {
   width: 100%;
-  height: 362px;
+  min-height: 362px;
   display: block;
   margin: 0 auto;
 }
@@ -74,17 +74,21 @@
 
 @media (min-width: $width-desktop) {
   .contacts {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .contacts__container {
+    width: 1440px;
     position: relative;
-    max-width: 1440px;
     margin: 0 auto;
   }
 
   .contacts__wrapper {
     position: absolute;
     z-index: 1;
-    top: 50%;
-    transform: translateY(-53%);
-    left: 8%;
+    top: 80px;
+    left: 110px;
 
     margin: 0 auto;
     padding: 60px 80px;
