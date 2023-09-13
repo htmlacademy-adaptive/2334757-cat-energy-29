@@ -8,8 +8,7 @@
   width: 100%;
 }
 
-.field__wrapper--phone::after {
-  content: "";
+.field__wrapper--phone span {
   mask-image: url("../img/stack.svg#phone-icon");
   background-color: #000000;
   width: 20px;
@@ -21,8 +20,7 @@
   right: 10px;
 }
 
-.field__wrapper--mail::after {
-  content: "";
+.field__wrapper--mail span {
   mask-image: url("../img/stack.svg#mail-icon");
   background-color: #000000;
   width: 20px;
@@ -32,6 +30,10 @@
   top: 50%;
   transform: translateY(-50%);
   right: 10px;
+}
+
+.field__input:focus + span {
+  background-color: $primary-color;
 }
 
 .field__input {

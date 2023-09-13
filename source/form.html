@@ -76,13 +76,13 @@
                     <label class="field__title" for="cat-weight">
                       Вес&nbsp;(кг):*
                     </label>
-                    <input class="field__input field__input--cat-weight" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+                    <input class="field__input field__input--cat-weight" type="number" min="0" id="cat-weight" name="cat-weight" placeholder="7" required>
                   </li>
                   <li class="field-group__item field">
                     <label class="field__title" for="cat-age">
                       Возраст&nbsp;(лет):
                     </label>
-                    <input class="field__input field__input--cat-age" type="number" id="cat-age" name="cat-age" placeholder="7">
+                    <input class="field__input field__input--cat-age" type="number" min="0" id="cat-age" name="cat-age" placeholder="7">
                   </li>
                 </ul>
               </fieldset>
@@ -127,6 +127,7 @@
                     </label>
                     <div class="field__wrapper field__wrapper--mail">
                       <input class="field__input" type="text" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                      <span></span>
                     </div>
                   </li>
                   <li class="field-group__item field">
@@ -135,6 +136,7 @@
                     </label>
                     <div class="field__wrapper field__wrapper--phone">
                       <input class="field__input" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                      <span></span>
                     </div>
                   </li>
                 </ul>
