@@ -86,8 +86,8 @@
   color: $dark-text-color;
 
   background-color: $body-color;
-  position: absolute;
-  left: 0;
+  position: relative;
+  left: -20px;
   z-index: 2;
 
   padding: 0 20px;
@@ -95,23 +95,24 @@
   @media (min-width: $width-tablet) {
     font-size: 36px;
     line-height: 36px;
-
+    left: 0;
     padding: 0 40px;
-    left: 30px;
   }
 
   @media (min-width: $width-desktop) {
-    left: 70px;
+    left: -40px;
   }
 }
 
 @mixin block-line {
   content: "";
   background-color: $primary-color;
-  width: 100vw;
+  width: 300vw;
   height: 2px;
 
   position: absolute;
-  top: 0;
-  z-index: 2;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+  z-index: 1;
 }

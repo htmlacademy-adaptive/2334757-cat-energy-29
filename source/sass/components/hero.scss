@@ -18,9 +18,9 @@
   min-height: 305px;
   padding: 27px 0 170px 0;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/backgrounds/bg-cat-mobile@2x.jpg"), 320px auto;
-    }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/bg-cat-mobile@2x.jpg"), 320px auto;
+  }
 }
 
 .hero__title {
@@ -134,9 +134,9 @@
 
     position: relative;
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/backgrounds/bg-cat-desktop@2x.jpg"), 720px auto;
-      }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/bg-cat-desktop@2x.jpg"), 720px auto;
+    }
   }
 
   .hero__title {

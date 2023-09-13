@@ -37,20 +37,57 @@
   text-align: center;
 }
 
+.example__slider {
+  position: relative;
+}
+
 .example__slider img {
   display: block;
   margin: 0 auto;
-
   padding-bottom: 40px;
 }
 
 .example__slider-toggle {
   border: none;
+  padding: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &::after {
+    content: "";
+    width: 40px;
+    height: 257px;
+
+    position: absolute;
+    top: -150px;
+    left: -20px;
+
+    background-image: url("../img/content/toggle.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/toggle@2x.png"), 40px auto;
+    }
+  }
 }
 
-.example__slider-toggle use {
-  fill: $primary-color;
-  stroke: $primary-color;
+.example__slider-toggle:hover::after {
+  background-image: url("../img/content/toggle-hover.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/content/toggle-hover@2x.png"), 40px auto;
+  }
+}
+
+.example__slider-toggle:active::after {
+  background-image: url("../img/content/toggle-hover.png");
+  opacity: 0.6;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/content/toggle-hover@2x.png"), 40px auto;
+  }
 }
 
 @media (min-width: $width-tablet) {
@@ -97,6 +134,29 @@
     height: 512px;
 
     padding-bottom: 0;
+  }
+
+  .example__slider-toggle {
+    &::after {
+      height: 512px;
+      background-image: url("../img/content/toggle-tablet.png");
+
+      top: -255px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/content/toggle-tablet@2x.png"), 40px auto;
+      }
+    }
+  }
+
+  .example__slider-toggle:hover::after {
+    background-image: url("../img/content/toggle-hover-tablet.png");
+
+    top: -255px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/toggle-hover-tablet@2x.png"), 40px auto;
+    }
   }
 
   .example__before {
@@ -149,7 +209,18 @@
 
   .example__slider img {
     position: absolute;
-    top: 45px;
-    left: 50%;
+    top: -520px;
+    right: -50px;
+  }
+
+  .example__slider-toggle {
+    &::after {
+      top: -520px;
+      left: 360px;
+    }
+  }
+
+  .example__slider-toggle:hover::after {
+    top: -520px;
   }
 }

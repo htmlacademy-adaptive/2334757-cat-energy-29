@@ -52,10 +52,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-
-  &:last-child {
-    padding-bottom: -15px;
-  }
 }
 
 .header__item {

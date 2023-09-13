@@ -16,22 +16,31 @@
   align-items: center;
 }
 
-.field-group__title {
-  @include lined-title;
-}
+// .field-group__title-wrapper {
+//   position: relative;
+
+//   &:after {
+//     @include block-line;
+//   }
+// }
+
+// .field-group__title {
+//   @include lined-title;
+//   max-width: max-content;
+//   width: 65%;
+// }
 
 .field-group--contacts {
   margin-bottom: 40px;
   position: relative;
 
   &::before {
-    @include block-line;
+    // @include block-line;
   }
 }
 
 .field-group--contacts .field-group__title {
   margin-top: -15px;
-  max-width: 230px;
 }
 
 .field-group--contacts .field-group__list {
@@ -43,13 +52,12 @@
   position: relative;
 
   &::before {
-    @include block-line;
+    // @include block-line;
   }
 }
 
 .field-group--comment .field-group__title {
   margin-top: -15px;
-  max-width: 230px;
 }
 
 .field-group__comment-wrapper {
@@ -72,12 +80,10 @@
 
   .field-group--contacts .field-group__title {
     margin-top: -23px;
-    max-width: none;
   }
 
   .field-group--comment .field-group__title {
     margin-top: -23px;
-    max-width: none;
   }
 
   .field-group__comment-wrapper {
@@ -88,12 +94,6 @@
 @media (min-width: $width-desktop) {
   .field-group {
     margin-bottom: 0;
-  }
-
-  .field-group__title-wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    position: relative;
   }
 
   .field-group__list {

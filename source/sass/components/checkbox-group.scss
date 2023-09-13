@@ -3,14 +3,16 @@
   position: relative;
 
   &::before {
-    @include block-line;
+    // @include block-line;
   }
 }
 
-.checkbox-group__title {
-  @include lined-title;
-  margin-top: -15px;
-}
+// .checkbox-group__title {
+//   @include lined-title;
+//   margin-top: -15px;
+//   max-width: max-content;
+//   width: 65%;
+// }
 
 .checkbox-group__list {
   @include list-reset;
@@ -60,9 +62,9 @@
 }
 
 @media (min-width: $width-tablet) {
-  .checkbox-group__title {
-    margin-top: -23px;
-  }
+  // .checkbox-group__title {
+  //   margin-top: -23px;
+  // }
 
   .checkbox-group__list {
     padding-top: 70px;

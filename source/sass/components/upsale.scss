@@ -1,9 +1,5 @@
 .upsale {
-  position: relative;
-
-  &::before {
-    @include block-line;
-  }
+  overflow-x: hidden;
 }
 
 .upsale__wrapper {
@@ -15,23 +11,12 @@
   padding-top: 36px;
 }
 
-.upsale__title {
-  @include lined-title;
-
-  margin-top: -15px;
-}
-
 @media (min-width: $width-tablet) {
   .upsale__list {
     margin-bottom: 70px;
     padding-top: 80px;
   }
-
-  .upsale__title {
-    margin-top: -22px;
-  }
 }
-
 
 @media (min-width: $width-desktop) {
   .upsale__list-wrapper {
