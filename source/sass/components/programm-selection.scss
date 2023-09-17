@@ -20,7 +20,9 @@
 
 .programm-selection__button {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
+  padding: 10px;
+  font-size: 16px;
 }
 
 .programm-selection__note {
@@ -31,11 +33,15 @@
 }
 
 .programm-selection__form {
-  margin-bottom: 32px;
+  margin-bottom: 35px;
   overflow-x: hidden;
 }
 
 @media (min-width: $width-tablet) {
+  .programm-selection__form {
+    margin-bottom: 0;
+  }
+
   .programm-selection__wrapper {
     border: none;
     padding-top: 40px;
@@ -56,14 +62,15 @@
     gap: 60px;
     align-items: center;
 
-    margin-bottom: 60px;
+    margin-bottom: 62px;
   }
 
   .programm-selection__button {
     width: auto;
-    padding: 14px 65px;
-
+    padding: 16px 65px;
     margin-bottom: 0;
+
+    font-size: 20px;
   }
 }
 
@@ -85,7 +92,7 @@
     gap: 80px;
     align-items: start;
 
-    margin-bottom: 95px;
+    margin-bottom: 0;
   }
 
   .programm-selection__button-wrapper {

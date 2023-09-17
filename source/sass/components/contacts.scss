@@ -1,4 +1,6 @@
 .contacts {
+  position: relative;
+
   &--dark-background {
     background-color: $secondary-color;
   }
@@ -70,6 +72,10 @@
   .contacts__street {
     margin-bottom: 20px;
   }
+
+  .contacts__map {
+    min-height: 400px;
+  }
 }
 
 @media (min-width: $width-desktop) {
@@ -94,9 +100,5 @@
     padding: 60px 80px;
     width: 565px;
     background-color: $body-color;
-  }
-
-  .contacts__map {
-    min-height: 400px;
   }
 }

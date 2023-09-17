@@ -43,10 +43,8 @@
     padding: 0 10px;
     max-width: 145px;
   }
-}
 
-@media (min-width: $width-desktop) {
-  .bordered-data__info {
-    background-color: $secondary-color;
+  @media (min-width: $width-desktop) {
+    background-color: #eaeaea;
   }
 }
