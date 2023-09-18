@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <title>Cat Energy / Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="img/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/apple.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -25,12 +27,14 @@
           <a class="header__logo-text header__logo-text--noactive">
             <img src="img/logo/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип Cat Energy.">
           </a>
+          <!--is-active - Класс для активации кнопки меню с помощью JS-->
           <button class="header__button" type="button" aria-label="Кнопка открытия меню.">
             <span></span>
             <span></span>
             <span></span>
           </button>
         </div>
+        <!--js-nav - Класс для открытия меня с помощью JS-->
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item ">

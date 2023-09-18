@@ -12,8 +12,8 @@
 
 .catalog__list {
   @include list-reset;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 24px;
 }
 
@@ -29,7 +29,6 @@
   }
 
   .catalog__list {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
   }

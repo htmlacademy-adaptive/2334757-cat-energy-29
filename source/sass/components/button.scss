@@ -35,6 +35,12 @@
   color: $base-text-color;
 }
 
+.button:disabled,
+.button.disabled {
+  background-color: #ebebeb;
+  pointer-events: none;
+}
+
 @media (min-width: $width-tablet) {
   .button {
     font-size: 16px;

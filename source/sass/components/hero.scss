@@ -18,7 +18,7 @@
   min-height: 300px;
   padding: 27px 0 165px 0;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: $retina) {
     background-image: url("../img/backgrounds/bg-cat-mobile@2x.jpg"), 320px auto;
   }
 }
@@ -126,21 +126,21 @@
 
 @media (min-width: 1440px) {
   .hero {
-    margin-top: -171px;
+    margin-top: -271px;
     margin-bottom: 82px;
   }
 
   .hero__wrapper {
     background-image: url("../img/backgrounds/bg-cat-desktop.jpg"), linear-gradient(90deg, #ffffff 50%, #64a73d 50%);
     background-repeat: no-repeat;
-    background-position: right 50%;
+    background-position: right 0 bottom;
 
-    padding-top: 225px;
-    min-height: 695px;
+    padding-top: 325px;
+    min-height: 795px;
 
     position: relative;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $retina) {
       background-image: url("../img/backgrounds/bg-cat-desktop@2x.jpg"), 720px auto;
     }
   }
@@ -171,7 +171,7 @@
     height: 499px;
 
     position: absolute;
-    top: 140px;
+    top: 240px;
     left: 50%;
     transform: translateX(-30%);
     margin: 0;

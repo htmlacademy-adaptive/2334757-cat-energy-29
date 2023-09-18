@@ -57,12 +57,16 @@
   border-color: #cdcdcd;
 }
 
-.field__input--error {
+.field__input.error {
   border-color: #ff8282;
 }
 
-.field__wrapper--error::after {
+.field__wrapper.error::after {
   background-color: #ff8282;
+}
+
+.field__input:disabled {
+  opacity: 0.3;
 }
 
 @media (min-width: $width-tablet) {

@@ -5,7 +5,7 @@
   background-position: center;
   background-size: cover;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: $retina) {
     background-image: #63a63b url("../img/backgrounds/bg-cat-backpack@2x.jpg"), 245px auto;
   }
 }
@@ -39,14 +39,14 @@
 
 @media (min-width: $width-tablet) {
   .gift {
-    background: #63a63b url("../img/backgrounds/bg-cat-backpack-tablet.jpg"), linear-gradient(90deg, #5ca033 50%, #7ec255 50%);
+    background: url("../img/backgrounds/bg-cat-backpack-tablet.jpg"), linear-gradient(90deg, #5ca033 50%, #7ec255 50%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-bottom: 80px;
 
-    @media (min-resolution: 2dppx) {
-      background-image: #63a63b url("../img/backgrounds/bg-cat-backpack-tablet@2x.jpg"), 707px auto;
+    @media (min-resolution: $retina) {
+      background-image: url("../img/backgrounds/bg-cat-backpack-tablet@2x.jpg"), 707px auto;
     }
   }
 
@@ -74,7 +74,7 @@
     max-width: 245px;
     margin-bottom: 0;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $retina) {
       background-image: #63a63b url("../img/backgrounds/bg-cat-backpack@2x.jpg"), 245px auto;
     }
   }
