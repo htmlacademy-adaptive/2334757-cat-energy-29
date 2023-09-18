@@ -25,16 +25,12 @@
           <a class="header__logo-text" href="index.html">
             <img src="img/logo/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип Cat Energy.">
           </a>
-          <!--header__button--js - Класс для появления кнопки меню с помощью JS-->
-          <!--header__button--active - Класс для активации кнопки меню с помощью JS-->
           <button class="header__button js-menu-btn" type="button" aria-label="Кнопка открытия меню.">
             <span></span>
             <span></span>
             <span></span>
           </button>
         </div>
-        <!--header__nav--js - Класс для открытия меня с помощью JS-->
-        <!--header__nav--close - Класс для закрытия меня с помощью JS-->
         <nav class="header__nav js-header-menu">
           <ul class="header__list">
             <li class="header__item ">
@@ -81,13 +77,13 @@
                   <label class="field__title" for="cat-weight">
                     Вес&nbsp;(кг):*
                   </label>
-                  <input class="field__input field__input--cat-weight" type="number" min="0" id="cat-weight" name="cat-weight" placeholder="7" required>
+                  <input class="field__input field__input--cat-weight" type="text" min="0" id="cat-weight" name="cat-weight" placeholder="7" required>
                 </li>
                 <li class="field-group__item field">
                   <label class="field__title" for="cat-age">
                     Возраст&nbsp;(лет):
                   </label>
-                  <input class="field__input field__input--cat-age" type="number" min="0" id="cat-age" name="cat-age" placeholder="7">
+                  <input class="field__input field__input--cat-age" type="text" min="0" id="cat-age" name="cat-age" placeholder="7">
                 </li>
               </ul>
             </fieldset>
@@ -119,10 +115,11 @@
             </fieldset>
           </div>
           <fieldset class="programm-selection__field-group field-group field-group--contacts">
+            <legend hidden>Контакты</legend>
             <div class="field-group__title title container">
-              <legend class="title__lined">
+              <h2 class="title__lined">
                 Контактные данные (владельца кота)
-              </legend>
+              </h2>
             </div>
             <div class="field-group__wrapper container container--form">
               <ul class="field-group__list">
@@ -148,10 +145,11 @@
             </div>
           </fieldset>
           <fieldset class="programm-selection__field-group field-group field-group--comment">
+            <legend hidden>Комментарий</legend>
             <div class="field-group__title title container">
-              <legend class="title__lined">
+              <h2 class="title__lined">
                 Комментарий
-              </legend>
+              </h2>
             </div>
             <div class="field-group__comment-wrapper container container--form field">
               <label class="field__comment" for="comment"></label>
@@ -159,10 +157,11 @@
             </div>
           </fieldset>
           <fieldset class="programm-selection__field-group checkbox-group">
+            <legend hidden>Дополнительные продукты</legend>
             <div class="checkbox-group__title title container">
-              <legend class="title__lined title__lined--checkbox">
+              <h2 class="title__lined title__lined--checkbox">
                 Дополнительно
-              </legend>
+              </h2>
             </div>
             <div class="checkbox-group__wrapper container container--form">
               <ul class="checkbox-group__list">
@@ -208,19 +207,31 @@
         </form>
       </section>
       <section class="contacts contacts--dark-background">
-        <div class="contacts__container">
-          <div class="contacts__wrapper container">
-            <h2 class="contacts__title">
-              Приглашаем<br>к сотрудничеству дилеров!
-            </h2>
-            <div class="contacts__adress">
-              <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="contacts__city">Санкт-Петербург</p>
-            </div>
+        <div class="contacts__wrapper container">
+          <h2 class="contacts__title">
+            Приглашаем к&nbsp;сотрудничеству дилеров!
+          </h2>
+          <div class="contacts__adress">
+            <p>ул. Большая Конюшенная, д. 19/8</p>
+            <p>Санкт-Петербург</p>
           </div>
         </div>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6050354039498!2d30.319521629351087!3d59.9386957721457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692184719839!5m2!1sru!2sru" title="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <div class="contacts__map-wrapper">
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6050354039498!2d30.319521629351087!3d59.9386957721457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692184719839!5m2!1sru!2sru" title="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="contacts__map-img">
+            <noscript>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/map-desktop.webp 1x, img/content/map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet.webp 1x, img/content/map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/map-mobile.webp 1x, img/content/map-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/content/map-desktop.jpg 1x, img/content/map-desktop.jpg@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/content/map-tablet.jpg 1x, img/content/map-tablet.jpg@2x.png 2x">
+                <img src="img/content/map-mobile.jpg" width="320" height="362" srcset="img/content/map-mobile@2x.jpg 2x" alt="Местоположение офиса Cat Energy.">
+              </picture>
+            </noscript>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">

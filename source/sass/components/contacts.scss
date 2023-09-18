@@ -6,11 +6,38 @@
   }
 }
 
+.contacts__map-wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__map {
+  min-height: 362px;
+}
+
+.contacts__map-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.contacts__map-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 362px;
+}
+
 .contacts__wrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding-top: 26px;
   padding-bottom: 26px;
+
+  order: -1;
 }
 
 .contacts__title {
@@ -22,7 +49,7 @@
   color: $dark-text-color;
   text-transform: uppercase;
 
-  width: 140px;
+  max-width: 140px;
 }
 
 .contacts__adress {
@@ -32,22 +59,11 @@
   font-style: normal;
   font-weight: 400;
 
-  width: 140px;
+  max-width: 140px;
 }
 
-.contacts__street {
+.contacts__adress p {
   margin: 0;
-}
-
-.contacts__city {
-  margin: 0;
-}
-
-.contacts__map {
-  width: 100%;
-  min-height: 362px;
-  display: block;
-  margin: 0 auto;
 }
 
 @media (min-width: $width-tablet) {
@@ -59,22 +75,18 @@
     font-size: 20px;
     line-height: 26px;
 
-    width: 160px;
+    max-width: 160px;
   }
 
   .contacts__adress {
     font-size: 16px;
     text-align: end;
 
-    width: 160px;
+    max-width: 160px;
   }
 
-  .contacts__street {
+  .contacts__adress p:first-child {
     margin-bottom: 20px;
-  }
-
-  .contacts__map {
-    min-height: 400px;
   }
 }
 
@@ -84,21 +96,22 @@
     overflow: hidden;
   }
 
-  .contacts__container {
-    width: 1440px;
-    position: relative;
-    margin: 0 auto;
-  }
-
   .contacts__wrapper {
+    min-width: 565px;
+
     position: absolute;
     z-index: 1;
-    top: 80px;
-    left: 110px;
-
-    margin: 0 auto;
-    padding: 60px 80px;
-    width: 565px;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% - 330px), -50%);
     background-color: $body-color;
+  }
+
+  .contacts__adress {
+    text-align: start;
+  }
+
+  .contacts__map-img img {
+    min-height: 400px;
   }
 }
