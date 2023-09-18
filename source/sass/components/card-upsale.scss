@@ -1,6 +1,6 @@
 .card-upsale {
   border-bottom: $border;
-  padding: 13px 0 19px 0;
+  padding: 10px 0 19px 0;
 
   &:first-child {
     border-top: $border;
@@ -15,8 +15,8 @@
   display: flex;
   justify-content: space-between;
 
-  margin-top: 13px;
-  margin-bottom: 15px;
+  margin-top: 12px;
+  margin-bottom: 14px;
 }
 
 .card-upsale__information-info {
@@ -24,16 +24,19 @@
 }
 
 .card-upsale__information-value {
+  margin: 0;
   max-width: 45px;
 }
 
 .card-upsale__button {
+  font-size: 16px;
+  padding: 11px;
   width: 100%;
 }
 
 @media (min-width: $width-tablet) {
   .card-upsale {
-    padding: 26px 38px 28px;
+    padding: 25px 38px 28px;
     border: $border;
     border-bottom: none;
 
@@ -46,7 +49,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   .card-upsale__title {
@@ -55,8 +58,16 @@
 
   .card-upsale__information {
     margin: 0;
-    min-width: 200px;
-    max-width: 300px;
+    font-size: 16px;
+    gap: 50px;
+  }
+
+  .card-upsale__information-info {
+    max-width: 200px;
+  }
+
+  .card-upsale__information-value {
+    max-width: 50px;
   }
 }
 
@@ -75,7 +86,7 @@
 
   .card-upsale__wrapper {
     display: grid;
-    grid-template-columns: 290px 215px 55px;
+    grid-template-columns: 290px 215px 45px;
     align-items: center;
     gap: 35px;
 

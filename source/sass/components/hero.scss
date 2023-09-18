@@ -15,10 +15,10 @@
   background-repeat: no-repeat;
   background-position: top center;
 
-  min-height: 305px;
-  padding: 27px 0 170px 0;
+  min-height: 300px;
+  padding: 27px 0 165px 0;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: $retina) {
     background-image: url("../img/backgrounds/bg-cat-mobile@2x.jpg"), 320px auto;
   }
 }
@@ -55,14 +55,21 @@
   margin-top: -135px;
 }
 
+.hero__button {
+  padding: 10px 64px;
+  font-size: 16px;
+  line-height: 20px;
+}
 
-@media (min-width: 768px) {
+
+@media (min-width: $width-tablet) {
   .hero {
     margin-bottom: 0;
   }
 
   .hero__bg {
     background: none;
+    padding-top: 37px;
   }
 
   .hero__title {
@@ -81,7 +88,7 @@
     color: $dark-text-color;
     margin-top: 40px;
     margin-left: 90px;
-    margin-bottom: 21px;
+    margin-bottom: 17px;
     text-align: left;
     font-size: 20px;
     line-height: 20px;
@@ -99,7 +106,6 @@
 
     order: 2;
     margin-top: -80px;
-    margin-left: 20px;
     position: relative;
     z-index: 1;
   }
@@ -107,36 +113,45 @@
   .hero__button {
     order: 1;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     margin-left: 90px;
     margin-right: auto;
 
     font-size: 20px;
     line-height: 20px;
 
-    padding: 14px 26px;
+    padding: 17px 27px;
   }
 }
 
 @media (min-width: 1440px) {
   .hero {
-    margin-top: -171px;
+    margin-top: -271px;
     margin-bottom: 82px;
   }
 
   .hero__wrapper {
     background-image: url("../img/backgrounds/bg-cat-desktop.jpg"), linear-gradient(90deg, #ffffff 50%, #64a73d 50%);
     background-repeat: no-repeat;
-    background-position: right 50%;
+    background-position: right 0 bottom;
 
-    padding-top: 220px;
-    min-height: 700px;
+    padding-top: 325px;
+    min-height: 795px;
 
     position: relative;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $retina) {
       background-image: url("../img/backgrounds/bg-cat-desktop@2x.jpg"), 720px auto;
     }
+  }
+
+  .hero__bg {
+    margin-left: 80px;
+    padding: 0;
+  }
+
+  .hero__bg .container {
+    max-width: 1360px;
   }
 
   .hero__title {
@@ -153,17 +168,18 @@
 
   .hero__img {
     width: 552px;
-    height: 449px;
+    height: 499px;
 
     position: absolute;
-    top: 177px;
+    top: 240px;
     left: 50%;
     transform: translateX(-30%);
     margin: 0;
   }
 
   .hero__button {
-    margin-left: 0;
+    margin-left: 80px;
+    margin-top: 65px;
     max-width: 435px;
   }
 }

@@ -13,6 +13,14 @@ body {
   font-size: 14px;
   line-height: 100%;
   color: $base-text-color;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
 }
 
 img {
@@ -24,13 +32,9 @@ a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
-
-dl,
-dt,
-dd {
+.card__list dl,
+.card__list dt,
+.card__list dd {
   margin: 0;
 }
 

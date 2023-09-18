@@ -12,7 +12,7 @@
 
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 20px;
 }
 
 .about-product__item {
@@ -29,16 +29,18 @@
   }
 }
 
+.about-product__item p {
+  display: flex;
+  min-height: 60px;
+  align-items: center;
+
+  margin: 0;
+}
+
 .about-product__icon {
   position: absolute;
   top: 15px;
   left: 16px;
-}
-
-.about-product__item span {
-  display: flex;
-  min-height: 60px;
-  align-items: center;
 }
 
 @media (min-width: $width-tablet) {
@@ -55,7 +57,7 @@
     grid-row-gap: 37px;
   }
 
-  .about-product__item span {
+  .about-product__item p {
     display: block;
     margin-top: -2px;
   }

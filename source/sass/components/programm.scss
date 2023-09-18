@@ -1,6 +1,6 @@
 .programm {
   background-color: $secondary-color;
-  padding: 24px 33px 18px 20px;
+  padding: 24px 33px 20px 20px;
 }
 
 .programm__wrapper {
@@ -36,15 +36,15 @@
   color: $dark-text-color;
   font-weight: 400;
 
-  width: calc(100% - 60px);
+  width: calc(100% - 70px);
 }
 
 .programm__description {
   @include base-text;
 
   margin: 0;
-  margin-top: 29px;
-  padding-bottom: 23px;
+  margin-top: 23px;
+  padding-bottom: 20px;
 
   border-bottom: $border;
 }
@@ -56,48 +56,22 @@
   color: $dark-text-color;
   text-transform: uppercase;
 
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 15px;
   margin-top: 20px;
-  padding-right: 40px;
   position: relative;
-
-  &::after {
-    content: "";
-    background: url("../img/stack.svg#arrow-icon");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 24px;
-    height: 12px;
-
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translateY(-50%);
-  }
 }
 
-.programm__catalog-link:hover {
-  padding-right: 50px;
-}
-
-.programm__catalog-link:focus-visible {
-  outline: none;
-  border: 1px solid #000000;
-}
-
-.programm__catalog-link:active {
-  opacity: 0.3;
-}
-
-.programm__catalog-link:hover::after {
-  width: 32px;
-  height: 18px;
+.programm__catalog-link span {
+  display: block;
+  min-width: 107px;
+  max-width: 170px;
 }
 
 @media (min-width: $width-tablet) {
   .programm {
-    padding: 77px 316px 53px 52px;
+    padding: 75px 316px 60px 52px;
     position: relative;
   }
 
@@ -106,8 +80,8 @@
     height: 200px;
 
     position: absolute;
-    right: 60px;
-    top: 50%;
+    right: 63px;
+    top: 51%;
     transform: translateY(-50%);
   }
 
@@ -135,7 +109,7 @@
 
     padding: 0;
     margin: 0;
-    margin-top: 24px;
+    margin-top: 25px;
 
     border-bottom: none;
   }
@@ -144,14 +118,14 @@
     font-size: 20px;
     line-height: 20px;
 
-    margin-top: 52px;
+    margin-top: 57px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .programm {
 
-    padding: 47px 61px 55px 52px;
+    padding: 45px 61px 62px 52px;
   }
 
   .programm__icon {
@@ -189,6 +163,31 @@
   }
 
   .programm__catalog-link {
-    margin-top: 27px;
+    margin-top: 32px;
+  }
+
+  .programm__catalog-link:hover {
+    gap: 25px;
+  }
+
+  .programm__catalog-link:hover span::after {
+    content: "";
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(calc(-50% - 90px), -50%);
+
+    width: 26px;
+    height: 3px;
+    background-color: #000000;
+  }
+
+  .programm__catalog-link:focus-visible {
+    outline: none;
+    border: 1px solid #000000;
+  }
+
+  .programm__catalog-link:active {
+    opacity: 0.3;
   }
 }

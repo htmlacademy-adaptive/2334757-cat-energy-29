@@ -7,7 +7,6 @@ import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
-import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
 import { stacksvg } from 'gulp-stacksvg';
@@ -34,15 +33,6 @@ const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'))
-}
-
-
-// Scripts
-
-const scripts = () => {
-  return gulp.src('source/js/*.js')
-  .pipe(terser())
-  .pipe(gulp.dest('build/js'))
 }
 
 // Images
@@ -90,6 +80,7 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
+    'source/*.{png,jpg,svg,xml}',
     'source/*.webmanifest',
     'sourse/img/backgrounds/*.jpg',
   ], {
@@ -130,7 +121,6 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/img/**/*.{jpg,png,svg}', gulp.series(copyImages));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
@@ -144,7 +134,6 @@ export const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
     svg,
     stack,
     createWebp
@@ -160,7 +149,6 @@ export default gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
     svg,
     stack,
     createWebp

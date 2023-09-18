@@ -1,18 +1,7 @@
 .checkbox-group {
   @include fieldset-reset;
   position: relative;
-
-  &::before {
-    // @include block-line;
-  }
 }
-
-// .checkbox-group__title {
-//   @include lined-title;
-//   margin-top: -15px;
-//   max-width: max-content;
-//   width: 65%;
-// }
 
 .checkbox-group__list {
   @include list-reset;
@@ -20,8 +9,7 @@
   flex-direction: column;
   gap: 25px;
 
-  margin-bottom: 34px;
-  padding-top: 44px;
+  margin-bottom: 40px;
 }
 
 .checkbox-group__label {
@@ -39,7 +27,7 @@
 .checkbox-group__style-input {
   position: absolute;
   top: -6px;
-  left: -3px;
+  left: 0;
   width: 30px;
   height: 30px;
   background-color: #ffffff;
@@ -62,13 +50,7 @@
 }
 
 @media (min-width: $width-tablet) {
-  // .checkbox-group__title {
-  //   margin-top: -23px;
-  // }
-
   .checkbox-group__list {
-    padding-top: 70px;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 32px;
@@ -77,8 +59,29 @@
     margin-bottom: 52px;
   }
 
+  .checkbox-group__item {
+    min-height: 40px;
+  }
+
+  .checkbox-group__label {
+    padding-left: 60px;
+  }
+
+  .checkbox-group__label span {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
   .checkbox-group__style-input {
     top: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .checkbox-group__input-control[type="checkbox"]:checked + .checkbox-group__style-input::after {
+    width: 26px;
+    height: 26px;
   }
 
   .checkbox-group__input-control[type="checkbox"]:hover + .checkbox-group__style-input {

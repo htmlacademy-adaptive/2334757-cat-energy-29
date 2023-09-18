@@ -12,6 +12,7 @@
   border: none;
 
   display: inline-block;
+  cursor: pointer;
 
   &--secondary {
     background-color: $secondary-color;
@@ -32,6 +33,12 @@
 .button--secondary:active {
   background-color: #ebebeb;
   color: $base-text-color;
+}
+
+.button:disabled,
+.button.disabled {
+  background-color: #ebebeb;
+  pointer-events: none;
 }
 
 @media (min-width: $width-tablet) {

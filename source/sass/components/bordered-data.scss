@@ -27,7 +27,7 @@
   text-align: center;
   color: $base-text-color;
 
-  background-color: $secondary-color;
+  background-color: #eaeaea;
 
   display: block;
   margin: 0 auto;
@@ -43,10 +43,8 @@
     padding: 0 10px;
     max-width: 145px;
   }
-}
 
-@media (min-width: $width-desktop) {
-  .bordered-data__info {
-    background-color: $secondary-color;
+  @media (min-width: $width-desktop) {
+    background-color: #eaeaea;
   }
 }

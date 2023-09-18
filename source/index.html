@@ -4,33 +4,38 @@
     <meta charset="utf-8">
     <title>Cat Energy / Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="img/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/apple.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__wrapper container">
-        <div class="header__head">
-          <a class="header__logo header__logo--noactive">
+      <div class="header__wrapper">
+        <div class="header__head container">
+          <div class="header__logo header__logo--noactive">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
               <img src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
             </picture>
-          </a>
-          <a class="header__logo-text--noactive">
+          </div>
+          <a class="header__logo-text header__logo-text--noactive">
             <img src="img/logo/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип Cat Energy.">
           </a>
-          <button class="header__button--nojs js-menu-btn" type="button" aria-label="Кнопка открытия меню.">
+          <!--is-active - Класс для активации кнопки меню с помощью JS-->
+          <button class="header__button" type="button" aria-label="Кнопка открытия меню.">
             <span></span>
             <span></span>
             <span></span>
           </button>
         </div>
-        <nav class="header__nav--nojs js-header-menu">
+        <!--js-nav - Класс для открытия меня с помощью JS-->
+        <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item ">
               <a class="header__link header__link--current" href="javascript:void(0);">
@@ -71,7 +76,7 @@
               <source type="image/webp" srcset="img/content/product-mobile.webp 1x, img/content/product-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/content/product-desktop.png 1x, img/content/product-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/content/product-tablet.png 1x, img/content/product-tablet@2x.png 2x">
-              <img class="hero__img" src="img/content/product-mobile.png 1x" srcset="img/content/product-mobile@2x.png 2x" width="280" heigt="270" alt="Функциональное питание Cat Energy.">
+              <img class="hero__img" src="img/content/product-mobile.png" srcset="img/content/product-mobile@2x.png 2x" width="280" height="270" alt="Функциональное питание Cat Energy." loading="lazy">
             </picture>
             <a class="hero__button button" href="form.html">
               Подобрать программу
@@ -98,7 +103,10 @@
                 Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
               <a class="programm__catalog-link" href="catalog.html">
-                Каталог slim
+                <span>Каталог SLIM</span>
+                <svg width="24" height="12" aria-hidden="true" focusable="false" role="img" aria-label="Стрелка для перехода на страницу каталога SLIM.">
+                  <use xlink:href="img/stack.svg#arrow-icon"></use>
+                </svg>
               </a>
             </li>
             <li class="programms__item programm">
@@ -116,7 +124,10 @@
                 Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
               <a class="programm__catalog-link" href="catalog.html">
-                Каталог pro
+                <span>Каталог PRO</span>
+                <svg width="24" height="12" aria-hidden="true" focusable="false" role="img" aria-label="Стрелка для перехода на страницу каталога PRO.">
+                  <use xlink:href="img/stack.svg#arrow-icon"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -129,88 +140,104 @@
           </h2>
           <ol class="about-product__list">
             <li class="about-product__item about-product__item--benefit">
-              <svg class="about-product__icon" width="25" height="28" aria-hidden="true" focusable="false" role="img" aria-label="Изображение листа.">
+              <svg class="about-product__icon" width="30" height="29" aria-hidden="true" focusable="false" role="img" aria-label="Изображение листа.">
                 <use xlink:href="img/stack.svg#leaf-icon"></use>
               </svg>
-              <span>Функциональное питание содержит только полезные питательные вещества.</span>
+              <p>Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
             <li class="about-product__item about-product__item--cooking">
               <svg class="about-product__icon" width="27" height="29" aria-hidden="true" focusable="false" role="img" aria-label="Изображение стакана с водой.">
                 <use xlink:href="img/stack.svg#water-icon"></use>
               </svg>
-              <span>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</span>
+              <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="about-product__item about-product__item--meal-replacement">
               <svg class="about-product__icon" width="26" height="30" aria-hidden="true" focusable="false" role="img" aria-label="Изображение столовых приборов.">
                 <use xlink:href="img/stack.svg#cutlery-icon"></use>
               </svg>
-              <span>Замените один-два приема обычной еды на наше функциональное питание.</span>
+              <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="about-product__item about-product__item--results">
               <svg class="about-product__icon" width="27" height="31" aria-hidden="true" focusable="false" role="img" aria-label="Изображение часов.">
                 <use xlink:href="img/stack.svg#watch-icon"></use>
               </svg>
-              <span>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</span>
+              <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
             </li>
           </ol>
         </div>
       </section>
       <section class="example">
         <div class="example__wrapper container">
-          <h2 class="example__title">
-            Живой пример
-          </h2>
-          <p class="example__description">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="example__number-list">
-            <ul class="example__list">
-              <li class="example__item bordered-data">
-                <p class="bordered-data__value">
-                  5 кг
-                </p>
-                <span class="bordered-data__info">
-                  снижение веса
-                </span>
-              </li>
-              <li class="example__item bordered-data">
-                <p class="bordered-data__value">
-                  60 дней
-                </p>
-                <span class="bordered-data__info">
-                  затрачено времени
-                </span>
-              </li>
-            </ul>
-            <p class="example__costs">
-              Затраты на питание: <span>15 000 РУБ.</span>
+          <div class="example__wrapper-content">
+            <h2 class="example__title">
+              Живой пример
+            </h2>
+            <p class="example__description">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
+            <div class="example__number-list">
+              <ul class="example__list">
+                <li class="example__item bordered-data">
+                  <p class="bordered-data__value">
+                    5 кг
+                  </p>
+                  <span class="bordered-data__info">
+                    снижение веса
+                  </span>
+                </li>
+                <li class="example__item bordered-data">
+                  <p class="bordered-data__value">
+                    60 дней
+                  </p>
+                  <span class="bordered-data__info">
+                    затрачено времени
+                  </span>
+                </li>
+              </ul>
+              <p class="example__costs">
+                Затраты на питание: <span>15 000 РУБ.</span>
+              </p>
+            </div>
           </div>
           <div class="example__slider">
             <picture>
               <source type="image/webp" media="(min-width: 768px)" srcset="img/content/slider-tablet.webp 1x, img/content/slider-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/content/slider-mobile.webp 1x, img/content/slider-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/content/slider-tablet.png 1x, img/content/slider-tablet@2x.png 2x">
-              <img src="img/content/slider-mobile.png 1x" width="280" height="256" srcset="img/content/slider-mobile@2x.png 2x" alt="Кот Борис до и после функционального питания Cat Energy.">
+              <img src="img/content/slider-mobile.png" width="280" height="256" srcset="img/content/slider-mobile@2x.png 2x" alt="Кот Борис до и после функционального питания Cat Energy.">
             </picture>
-            <button class="example__slider-toggle"></button>
+            <button class="example__toggle" type="button" aria-label="Кнопка переключения картинок до и после.">
+              <span class="example__toggle-wrapper"></span>
+            </button>
           </div>
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__container">
-          <div class="contacts__wrapper container">
-            <h2 class="contacts__title">
-              Приглашаем<br>к сотрудничеству дилеров!
-            </h2>
-            <div class="contacts__adress">
-              <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="contacts__city">Санкт-Петербург</p>
-            </div>
+        <div class="contacts__wrapper container">
+          <h2 class="contacts__title">
+            Приглашаем к&nbsp;сотрудничеству дилеров!
+          </h2>
+          <div class="contacts__adress">
+            <p>ул. Большая Конюшенная, д. 19/8</p>
+            <p>Санкт-Петербург</p>
           </div>
         </div>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6050354039498!2d30.319521629351087!3d59.9386957721457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692184719839!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <div class="contacts__map-wrapper">
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6050354039498!2d30.319521629351087!3d59.9386957721457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692184719839!5m2!1sru!2sru" title="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="contacts__map-img">
+            <noscript>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/map-desktop.webp 1x, img/content/map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet.webp 1x, img/content/map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/map-mobile.webp 1x, img/content/map-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/content/map-desktop.jpg 1x, img/content/map-desktop.jpg@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/content/map-tablet.jpg 1x, img/content/map-tablet.jpg@2x.png 2x">
+                <img src="img/content/map-mobile.jpg" width="320" height="362" srcset="img/content/map-mobile@2x.jpg 2x" alt="Местоположение офиса Cat Energy.">
+              </picture>
+            </noscript>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -244,15 +271,14 @@
           </ul>
         </div>
         <div class="footer__copyright copyright">
-          <a class="copyright__text" href="https://htmlacademy.ru/" target="_blank">
+          <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <span>HTML Academy</span>
           </a>
-          <a class="copyright__logo" href="https://htmlacademy.ru/">
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="34" aria-hidden="true" focusable="false" role="img" aria-label="Ссылка на HTML Academy." xmlns="http://www.w3.org/2000/svg" fill="none"><g clip-path="url(#a)"><path fill="#666" d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h27v34H0z"/></clipPath></defs></svg>
           </a>
         </div>
       </div>
     </footer>
-    <!-- <script src="js/main.js"></script> -->
   </body>
 </html>

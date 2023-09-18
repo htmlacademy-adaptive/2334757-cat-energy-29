@@ -1,4 +1,4 @@
-.title__wrapper {
+.title {
   position: relative;
 
   &::after {
@@ -6,12 +6,26 @@
   }
 }
 
-.title {
+.title__lined {
   @include lined-title;
   max-width: max-content;
-  width: 95%;
+  width: 82%;
 
-  @media (min-width: $width-tablet) {
+  margin-bottom: 35px;
+
+  &--upsale {
+    width: 95%;
+  }
+}
+
+
+@media (min-width: $width-tablet) {
+  .title__lined {
     width: 90%;
+    margin-bottom: 75px;
+
+    &--checkbox {
+      margin-bottom: 57px;
+    }
   }
 }

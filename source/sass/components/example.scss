@@ -1,5 +1,9 @@
 .example {
-  background-color: $secondary-color;
+  background-color: #eaeaea;
+}
+
+.example__wrapper {
+  padding-bottom: 40px;
 }
 
 .example__title {
@@ -39,15 +43,17 @@
 
 .example__slider {
   position: relative;
+  margin: 0 auto;
+
+  width: 280px;
+  height: 100%;
 }
 
 .example__slider img {
   display: block;
-  margin: 0 auto;
-  padding-bottom: 40px;
 }
 
-.example__slider-toggle {
+.example__toggle {
   border: none;
   padding: 0;
 
@@ -56,43 +62,91 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  width: 40px;
+  height: 100%;
+  background-color: transparent;
+
   &::after {
     content: "";
-    width: 40px;
-    height: 257px;
+    width: 4px;
+    height: 256px;
 
     position: absolute;
-    top: -150px;
-    left: -20px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
-    background-image: url("../img/content/toggle.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/content/toggle@2x.png"), 40px auto;
-    }
+    background-color: #666666;
   }
 }
 
-.example__slider-toggle:hover::after {
-  background-image: url("../img/content/toggle-hover.png");
+.example__toggle-wrapper {
+  position: absolute;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/content/toggle-hover@2x.png"), 40px auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #ffffff;
+  border: 3px solid #666666;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    border: 8px solid transparent;
+    border-right: 8px solid #666666;
+
+    position: absolute;
+    right: 50%;
+    transform: translateX(-25%);
+  }
+
+  &::after {
+    content: "";
+    border: 8px solid transparent;
+    border-left: 8px solid #666666;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(25%);
   }
 }
 
-.example__slider-toggle:active::after {
-  background-image: url("../img/content/toggle-hover.png");
+.example__toggle-wrapper svg {
+  position: absolute;
+}
+
+.example__toggle:hover::after {
+  background-color: $primary-color;
+}
+
+.example__toggle:hover span {
+  border-color: $primary-color;
+}
+
+.example__toggle:hover span::before {
+  border-right-color: $primary-color;
+}
+
+.example__toggle:hover span::after {
+  border-left-color: $primary-color;
+}
+
+.example__toggle:active {
   opacity: 0.6;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/content/toggle-hover@2x.png"), 40px auto;
-  }
 }
+
 
 @media (min-width: $width-tablet) {
   .example {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 60%, rgba(242, 242, 242, 1) 60%, rgba(242, 242, 242, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 57%, rgba(234, 234, 234, 1) 57%, rgba(234, 234, 234, 1) 100%);
   }
 
   .example__wrapper {
@@ -104,6 +158,7 @@
 
   .example__title {
     margin-bottom: 60px;
+    padding-top: 0;
   }
 
   .example__description {
@@ -112,15 +167,18 @@
 
   .example__number-list {
     display: flex;
+    align-items: center;
     margin-bottom: 100px;
   }
 
   .example__list {
     margin-bottom: 0;
     max-width: 550px;
+    gap: 43px;
   }
 
   .example__costs {
+    margin: 0;
     margin-left: auto;
     width: 174px;
     text-align: end;
@@ -129,50 +187,34 @@
     line-height: 30px;
   }
 
+  .example__slider {
+    width: 560px;
+  }
+
   .example__slider img {
     width: 560px;
     height: 512px;
-
-    padding-bottom: 0;
   }
 
-  .example__slider-toggle {
+  .example__toggle {
     &::after {
       height: 512px;
-      background-image: url("../img/content/toggle-tablet.png");
-
-      top: -255px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/content/toggle-tablet@2x.png"), 40px auto;
-      }
     }
-  }
-
-  .example__slider-toggle:hover::after {
-    background-image: url("../img/content/toggle-hover-tablet.png");
-
-    top: -255px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/content/toggle-hover-tablet@2x.png"), 40px auto;
-    }
-  }
-
-  .example__before {
-    width: 100%;
   }
 }
 
 @media (min-width: $width-desktop) {
   .example {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 25%, rgba(242, 242, 242, 1) 25%, rgba(242, 242, 242, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 22%, rgba(242, 242, 242, 1) 22%, rgba(234, 234, 234, 1) 100%);
   }
 
   .example__wrapper {
     padding-top: 0;
     padding-bottom: 75px;
     border: none;
+
+    display: flex;
+    justify-content: space-between;
   }
 
   .example__title {
@@ -180,7 +222,7 @@
   }
 
   .example__description {
-    width: 435px;
+    width: 433px;
     margin-bottom: 70px;
   }
 
@@ -191,36 +233,23 @@
 
   .example__list {
     justify-content: left;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .example__costs {
     display: flex;
-    gap: 63px;
+    gap: 64px;
     margin: 0;
     text-align: left;
 
-    width: 335px;
+    width: 337px;
   }
 
   .example__costs span {
     min-width: 100px;
   }
 
-  .example__slider img {
-    position: absolute;
-    top: -520px;
-    right: -50px;
-  }
-
-  .example__slider-toggle {
-    &::after {
-      top: -520px;
-      left: 360px;
-    }
-  }
-
-  .example__slider-toggle:hover::after {
-    top: -520px;
+  .example__slider {
+    margin: 0;
   }
 }

@@ -1,10 +1,10 @@
 .radio-group {
   @include fieldset-reset;
 
-  padding-top: 22px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
-  margin-bottom: 44px;
+  margin-bottom: 25px;
 
   position: relative;
 
@@ -92,24 +92,12 @@
 
     padding: 23px 27px 27px;
     margin-top: -18px;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
 
     &::before,
     &::after {
       display: none;
     }
-  }
-
-  .radio-group__style-input {
-    top: 0;
-  }
-}
-
-@media (min-width: $width-desktop) {
-  .radio-group {
-    padding: 27px;
-    margin-bottom: 0;
-    margin-top: 0;
   }
 
   .radio-group__style-input {
@@ -124,5 +112,13 @@
 
   .radio-group__label {
     padding-left: 60px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .radio-group {
+    padding: 27px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }

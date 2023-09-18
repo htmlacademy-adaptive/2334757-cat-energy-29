@@ -2,7 +2,7 @@
   padding-top: 27px;
   border-top: $border;
 
-  margin-bottom: 42px;
+  margin-bottom: 25px;
 }
 
 .catalog__title {
@@ -12,15 +12,15 @@
 
 .catalog__list {
   @include list-reset;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
 
 @media (min-width: $width-tablet) {
   .catalog__wrapper {
-    padding-top: 27px;
-    margin-bottom: 93px;
+    padding-top: 37px;
+    margin-bottom: 70px;
     border: none;
   }
 
@@ -29,9 +29,13 @@
   }
 
   .catalog__list {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+  }
+
+  .card__image--big img {
+    width: 168px;
+    height: 206px;
   }
 }
 
@@ -50,6 +54,7 @@
 
 @media (min-width: $width-desktop) {
   .catalog__wrapper {
+    padding-top: 15px;
     margin-bottom: 75px;
   }
 }
