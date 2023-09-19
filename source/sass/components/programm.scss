@@ -65,7 +65,6 @@
 
 .programm__catalog-link span {
   display: block;
-  min-width: 107px;
   max-width: 170px;
 }
 
@@ -117,7 +116,7 @@
   .programm__catalog-link {
     font-size: 20px;
     line-height: 20px;
-
+    gap: 25px;
     margin-top: 57px;
   }
 }
@@ -164,6 +163,10 @@
 
   .programm__catalog-link {
     margin-top: 32px;
+  }
+
+  .programm__catalog-link span {
+    min-width: 108px;
   }
 
   .programm__catalog-link:hover {

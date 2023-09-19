@@ -56,7 +56,7 @@
 }
 
 .hero__button {
-  padding: 10px 64px;
+  padding: 10px 62px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -148,6 +148,7 @@
   .hero__bg {
     margin-left: 80px;
     padding: 0;
+    min-height: auto;
   }
 
   .hero__bg .container {
@@ -164,6 +165,7 @@
 
   .hero__product {
     width: 100%;
+    margin-top: 30px;
   }
 
   .hero__img {
@@ -179,7 +181,7 @@
 
   .hero__button {
     margin-left: 80px;
-    margin-top: 65px;
+    margin-top: 0;
     max-width: 435px;
   }
 }
