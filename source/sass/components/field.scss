@@ -46,6 +46,7 @@
   &--comment {
     min-width: 280px;
     min-height: 150px;
+    resize: none;
 
     @media (min-width: $width-tablet) {
       min-height: 175px;

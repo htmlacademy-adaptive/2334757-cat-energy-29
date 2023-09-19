@@ -79,8 +79,8 @@ const stack = () => {
 const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
-    'source/*.ico',
-    'source/*.{png,jpg,svg,xml}',
+    'source/favicons/*.png',
+    'source/*.{ico,xml}',
     'source/*.webmanifest',
     'sourse/img/backgrounds/*.jpg',
   ], {
