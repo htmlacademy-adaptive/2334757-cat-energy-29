@@ -88,6 +88,14 @@
   .contacts__adress p:first-child {
     margin-bottom: 20px;
   }
+
+  .contacts__map {
+    min-height: 400px;
+  }
+
+  .contacts__map-img img {
+    min-height: 400px;
+  }
 }
 
 @media (min-width: $width-desktop) {
@@ -98,20 +106,17 @@
 
   .contacts__wrapper {
     min-width: 565px;
+    padding: 60px 80px;
 
     position: absolute;
     z-index: 1;
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% - 330px), -50%);
+    transform: translate(calc(-50% - 330px), -55%);
     background-color: $body-color;
   }
 
   .contacts__adress {
     text-align: start;
-  }
-
-  .contacts__map-img img {
-    min-height: 400px;
   }
 }
