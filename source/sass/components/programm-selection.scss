@@ -1,7 +1,7 @@
 .programm-selection__wrapper {
   padding-top: 27px;
 
-  border-top: $border;
+  border-top: 1px solid #e6e6e6;
 }
 
 .programm-selection__title {
@@ -72,6 +72,13 @@
 
     font-size: 20px;
   }
+
+  .programm-selection__note {
+    font-size: 16px;
+    line-height: 16px;
+
+    max-width: 250px;
+  }
 }
 
 @media (min-width: $width-desktop) {
@@ -104,12 +111,5 @@
     padding: 14px 208px;
     font-size: 20px;
     line-height: 26px;
-  }
-
-  .programm-selection__note {
-    font-size: 16px;
-    line-height: 16px;
-
-    max-width: 250px;
   }
 }
