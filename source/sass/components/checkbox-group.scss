@@ -52,9 +52,9 @@
 @media (min-width: $width-tablet) {
   .checkbox-group__list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, 285px);
     row-gap: 32px;
-    column-gap: 120px;
+    column-gap: 58px;
 
     margin-bottom: 52px;
   }
