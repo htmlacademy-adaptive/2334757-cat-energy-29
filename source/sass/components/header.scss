@@ -20,13 +20,11 @@
   display: flex;
 }
 
-.header__logo:hover a,
-.header__logo-text:hover a {
+.header__logo:hover {
   opacity: 0.8;
 }
 
-.header__logo:active a,
-.header__logo-text:active a {
+.header__logo:active {
   opacity: 0.6;
 }
 
@@ -44,7 +42,7 @@
 }
 
 .header__button {
-  display: none;
+  visibility: hidden;
 
   width: 25px;
   height: 18px;
