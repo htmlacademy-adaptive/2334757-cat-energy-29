@@ -52,7 +52,7 @@
     counter-reset: num;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 250px));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 247px));
     grid-column-gap: 137px;
     grid-row-gap: 37px;
   }
@@ -67,7 +67,7 @@
     position: relative;
 
     &:first-of-type {
-      width: 224px;
+      width: 235px;
     }
 
     &::before {
@@ -87,7 +87,7 @@
       color: $secondary-color;
 
       position: absolute;
-      top: 128px;
+      top: 140px;
       right: 0;
       z-index: -1;
     }
@@ -106,6 +106,6 @@
   }
 
   .about-product__list {
-    grid-column-gap: 73px;
+    grid-column-gap: 77px;
   }
 }
